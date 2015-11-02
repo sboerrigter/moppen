@@ -1,10 +1,10 @@
 $heading-font: (
-  'Helvetica Neue',
+  'Source Sans Pro',
   sans-serif,
 );
 
 $text-font: (
-  'Helvetica Neue',
+  'Source Sans Pro',
   sans-serif,
 );
 
@@ -12,11 +12,11 @@ $line-height: $vertical-spacing;
 
 $heading-sizes: (
   'h1': (
-    'small': 28px,
-    'medium': 40px,
+    'small': 24px,
+    'medium': 36px,
   ),
   'h2': (
-    'small': 24px,
-    'medium': 28px,
+    'small': 20px,
+    'medium': 24px,
   ),
 );

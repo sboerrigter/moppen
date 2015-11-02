@@ -1,24 +1,28 @@
-$light-yellow: hsl(47, 100%, 85%);
-$red: hsl(0, 58%, 52%);
-$blue: hsl(213, 76%, 47%);
+$blue:            #55CBF2;
+$red:             #FF6153;
+$dark-blue:       #0D3380;
+$light-blue:      #E6EFF2;
 
-$black: black;
-$dark-gray: hsl(0, 0%, 20%);
-$medium-gray: hsl(0, 0%, 40%);
-$gray: hsl(0, 0%, 60%);
-$light-gray: hsl(0, 0%, 90%);
-$white: white;
+$black:            black;
+$dark-gray:        hsl(0, 0%, 20%);
+$medium-gray:      hsl(0, 0%, 40%);
+$gray:             hsl(0, 0%, 60%);
+$light-gray:       hsl(0, 0%, 90%);
+$white:            white;
 
-$light-background: $light-gray;
-$border-color: $light-gray;
-$body-background: $white;
+$light-yellow:     hsl(47, 100%, 85%);
 
-$primary-color: $dark-gray;
-$secondary-color: $gray;
+$primary-color:    $blue;
+$secondary-color:  $red;
 
-$heading-color: $dark-gray;
-$link-color: $blue;
-$text-color: $medium-gray;
-$text-light: $gray;
 
-$code-color: $light-yellow;
+$body-background:  $white;
+$light-background: $light-blue;
+$border-color:     $light-blue;
+
+$heading-color:    $dark-blue;
+$text-color:       $medium-gray;
+$text-light:       $gray;
+$link-color:       $medium-gray;
+
+$code-color:       $light-yellow;
