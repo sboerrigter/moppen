@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8c3e1dd25009aa02f72912f80252684c",
-    "content-hash": "537cae84223e4228923d201ab1361c35",
+    "hash": "f9c499836862402d95f4eb195937be47",
+    "content-hash": "3b62f56b761d07d228b989bf273f3322",
     "packages": [
         {
             "name": "composer/installers",
@@ -102,16 +102,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.3",
+            "version": "4.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7"
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
-                "reference": "2afe902599538caaa0f1fd7579895dd7cc0ac5f7",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-08-18 18:16:11"
+            "time": "2015-09-15 15:01:23"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -187,10 +187,10 @@
         },
         {
             "name": "koodimonni-language/core-nl_nl",
-            "version": "4.3",
+            "version": "4.3.1",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.3/nl_NL.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.3.1/nl_NL.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -361,16 +361,36 @@
             "time": "2015-10-28 18:53:35"
         },
         {
-            "name": "wpackagist-plugin/timber-library",
-            "version": "0.21.3",
+            "name": "wpackagist-plugin/google-analytics-for-wordpress",
+            "version": "5.4.6",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/0.21.3"
+                "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+                "reference": "tags/5.4.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.0.21.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+        },
+        {
+            "name": "wpackagist-plugin/timber-library",
+            "version": "0.22.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/0.22.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.0.22.0.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -381,16 +401,36 @@
             "homepage": "https://wordpress.org/plugins/timber-library/"
         },
         {
-            "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "3.4.2",
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "2.3.5",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/3.4.2"
+                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/2.3.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.3.4.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-retina-2x",
+            "version": "3.5.4",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-retina-2x/",
+                "reference": "tags/3.5.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.3.5.4.zip",
                 "reference": null,
                 "shasum": null
             },

@@ -46,14 +46,16 @@
 	},
 	"require": {
 		"php": ">=5.5",
-		"composer/installers": "~1.0.19",
-		"vlucas/phpdotenv": "^2.0.1",
-		"johnpbloch/wordpress": "4.3",
-		"koodimonni-language/core-nl_nl": "4.3",
-		"trendwerk/editor-capabilities": "1.0.0",
-		"trendwerk/post-type-menu-highlight": "1.1.2",
-		"wpackagist-plugin/wp-retina-2x": "3.4.2",
-		"wpackagist-plugin/timber-library": "0.21.3"
+		"composer/installers": "*",
+		"vlucas/phpdotenv": "*",
+		"johnpbloch/wordpress": "*",
+		"koodimonni-language/core-nl_nl": "*",
+		"trendwerk/editor-capabilities": "*",
+		"trendwerk/post-type-menu-highlight": "*",
+		"wpackagist-plugin/google-analytics-for-wordpress": "*",
+		"wpackagist-plugin/wordpress-seo": "*",
+		"wpackagist-plugin/wp-retina-2x": "*",
+		"wpackagist-plugin/timber-library": "*"
 	},
 	"extra": {
 		"dropin-paths": {

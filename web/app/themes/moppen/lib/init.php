@@ -47,3 +47,8 @@ new Trendwerk\TrendPress\Menus;
  * Timber helpers
  */
 new Trendwerk\TrendPress\TimberHelpers\Menus;
+
+/**
+ * Custom classes
+ */
+new Trendwerk\TrendPress\PostTypes;
