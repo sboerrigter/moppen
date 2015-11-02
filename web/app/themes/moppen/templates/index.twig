@@ -7,12 +7,16 @@
 	</h1>
 
 	{{ description }}
-	
+
 	{% if posts is not empty %}
 
-		{% for post in posts %}
-			{% include 'partials/loop-post.twig' %}
-		{% endfor %}
+		<ul>
+
+			{% for post in posts %}
+				{% include 'partials/loop-post.twig' %}
+			{% endfor %}
+
+		</ul>
 
 		{% include 'partials/pagination.twig' %}
 
