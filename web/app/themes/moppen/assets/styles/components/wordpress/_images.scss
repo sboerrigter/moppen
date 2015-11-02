@@ -1,0 +1,27 @@
+.alignleft {
+  float: left;
+  margin: 10px $horizontal-spacing 10px 0;
+}
+
+.alignright {
+  float: right;
+  margin: 10px 0 10px $horizontal-spacing;
+}
+
+.aligncenter {
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.size-thumbnail,
+.size-medium,
+.size-large,
+.size-auto,
+.alignnone,
+.alignleft,
+.alignright,
+.aligncenter,
+.size-full {
+  height: auto;
+  max-width: 100%;
+}

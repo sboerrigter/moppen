@@ -1,0 +1,14 @@
+main {
+  @include full-width();
+  padding: $vertical-spacing 0 ($vertical-spacing / 2);
+
+  @include respond-to('medium') {
+    background-color: $body-background;
+    padding: ($vertical-spacing * 2) 0 $vertical-spacing;
+
+    .wrapper {
+      margin: 0 auto;
+      width: 780px;
+    }
+  }
+}

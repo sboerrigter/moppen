@@ -1,0 +1,19 @@
+{% if post.terms('tags') %}
+
+	<p class="tags">
+
+		<span>
+			{{ __('Tags', 'tp') }}
+		</span>
+
+		{% for term in post.terms('tags') %}
+
+			<a class="tag" href="{{ term.link }}">
+				{{ term.name }}
+			</a>
+
+		{% endfor %}
+
+	</p>
+
+{% endif %}

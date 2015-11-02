@@ -1,0 +1,18 @@
+.post {
+  @include full-width();
+  margin: 0 0 $vertical-spacing;
+  padding: 0 0 $vertical-spacing;
+
+  &.sticky {
+    @include box();
+    margin-bottom: ($vertical-spacing * 2);
+  }
+
+  h2 {
+    margin-bottom: ($vertical-spacing / 2);
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}

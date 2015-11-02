@@ -1,0 +1,16 @@
+/// Button
+@mixin button() {
+  @include box-link((
+  	'background-color': $primary-color,
+  	'color': $white,
+  	'height': 50px,
+  	'horizontal-padding': 35px,
+  	'margin': 10px,
+  ));
+  @include hover((
+    'background-color': shade($primary-color, 15%),
+    'color': $white
+  ));
+  font-weight: bold;
+  text-transform: uppercase;
+}
