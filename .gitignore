@@ -1,0 +1,22 @@
+# WordPress
+web/.htaccess
+web/app/debug.log
+web/wp
+
+# Dotenv
+.env
+!.env.example
+
+# Composer
+vendor
+
+# App
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+web/app/mu-plugins/*
+!web/app/mu-plugins/bedrock-autoloader.php
+web/app/languages/*
+!web/app/languages/.gitkeep
+web/app/upgrade
+web/app/uploads/*
+!web/app/uploads/.gitkeep
