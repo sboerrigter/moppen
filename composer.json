@@ -38,7 +38,20 @@
 		{
 			"type": "composer",
 			"url": "http://languages.koodimonni.fi"
-		}
+		},
+		{
+            "type": "package",
+            "package": {
+                "name": "gravityforms/gravityforms",
+                "type": "wordpress-plugin",
+                "version": "1.9.10.15",
+                "source": {
+                    "type": "git",
+                    "url": "https://github.com/gravityforms/gravityforms.git",
+                    "reference": "1.9.10.15"
+                }
+            }
+        }
 	],
 	"require-dev": {
 		"trendwerk/dev-mail": "1.0.1",
@@ -47,11 +60,12 @@
 	"require": {
 		"php": ">=5.5",
 		"composer/installers": "*",
-		"vlucas/phpdotenv": "*",
+		"gravityforms/gravityforms": "*",
 		"johnpbloch/wordpress": "*",
 		"koodimonni-language/core-nl_nl": "*",
 		"trendwerk/editor-capabilities": "*",
 		"trendwerk/post-type-menu-highlight": "*",
+		"vlucas/phpdotenv": "*",
 		"wpackagist-plugin/google-analytics-for-wordpress": "*",
 		"wpackagist-plugin/wordpress-seo": "*",
 		"wpackagist-plugin/wp-retina-2x": "*",
