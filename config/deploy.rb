@@ -1,11 +1,11 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'moppen'
+set :repo_url, 'git@bitbucket.com:sboerrigter/moppen.git'
 
 # Branch
 set :branch, :master
 
 # Deployment folder
-set :deploy_to, -> { "/var/www/#{fetch(:application)}" }
+set :deploy_to, -> { "/srv/users/serverpilot/apps/#{fetch(:application)}" }
 
 # Log level
 set :log_level, :info
