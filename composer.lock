@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f9c499836862402d95f4eb195937be47",
-    "content-hash": "3b62f56b761d07d228b989bf273f3322",
+    "hash": "a49248056bfa3a60036d6f13fd8ace76",
+    "content-hash": "aefa5163b5bcd431e6c17916966348b9",
     "packages": [
         {
             "name": "composer/installers",
@@ -99,6 +99,16 @@
                 "zikula"
             ],
             "time": "2014-11-29 01:29:17"
+        },
+        {
+            "name": "gravityforms/gravityforms",
+            "version": "1.9.10.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gravityforms/gravityforms.git",
+                "reference": "1.9.10.15"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "johnpbloch/wordpress",
