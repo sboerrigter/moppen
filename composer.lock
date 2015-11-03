@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a49248056bfa3a60036d6f13fd8ace76",
-    "content-hash": "aefa5163b5bcd431e6c17916966348b9",
+    "hash": "340b908ebe7612ff570eb8703b5e66ac",
+    "content-hash": "8b57729983b3d85dba1c42edf19852fb",
     "packages": [
         {
             "name": "composer/installers",
@@ -389,6 +389,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+        },
+        {
+            "name": "wpackagist-plugin/gravity-forms-custom-post-types",
+            "version": "3.0.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/gravity-forms-custom-post-types/",
+                "reference": "tags/3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/gravity-forms-custom-post-types.3.0.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/gravity-forms-custom-post-types/"
         },
         {
             "name": "wpackagist-plugin/timber-library",

@@ -67,9 +67,11 @@
 		"trendwerk/post-type-menu-highlight": "*",
 		"vlucas/phpdotenv": "*",
 		"wpackagist-plugin/google-analytics-for-wordpress": "*",
+		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
+		"wpackagist-plugin/timber-library": "*",
 		"wpackagist-plugin/wordpress-seo": "*",
-		"wpackagist-plugin/wp-retina-2x": "*",
-		"wpackagist-plugin/timber-library": "*"
+		"wpackagist-plugin/wp-retina-2x": "*"
+
 	},
 	"extra": {
 		"dropin-paths": {
