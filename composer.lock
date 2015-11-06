@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "340b908ebe7612ff570eb8703b5e66ac",
-    "content-hash": "8b57729983b3d85dba1c42edf19852fb",
+    "hash": "4e8a45c5b3d6255cca1e7b869ac5b217",
+    "content-hash": "81e977b8f71b2011bebfc781c7195e95",
     "packages": [
         {
             "name": "composer/installers",
@@ -409,6 +409,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/gravity-forms-custom-post-types/"
+        },
+        {
+            "name": "wpackagist-plugin/limit-login-attempts",
+            "version": "1.7.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/limit-login-attempts/",
+                "reference": "tags/1.7.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/limit-login-attempts.1.7.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/limit-login-attempts/"
         },
         {
             "name": "wpackagist-plugin/timber-library",
