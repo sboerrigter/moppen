@@ -1,14 +1,15 @@
 .navigation-icon {
-  height: 19px;
+  height: 24px;
   position: relative;
-  width: 24px;
+  width: 30px;
 
   .line {
     background-color: $white;
-    height: 3px;
+    border-radius: 2px;
+    height: 4px;
     position: absolute;
     transition: transform 0.2s ease-out;
-    width: 24px;
+    width: 30px;
   }
 
   .line:nth-child(1) {
@@ -16,24 +17,32 @@
   }
 
   .line:nth-child(2) {
-    top: 8px;
+    top: 10px;
   }
 
   .line:nth-child(3) {
-    top: 16px;
+    top: 10px;
+  }
+
+  .line:nth-child(4) {
+    top: 20px;
   }
 
   &.active {
     .line:nth-child(1) {
-      transform: rotate(-45deg) translate(-5.3px, 5.3px);
+      transform:  scale(0,1) translate(0, 10px);
     }
 
     .line:nth-child(2) {
-      transform: scale(0, 1);
+      transform:  rotate(135deg);
     }
 
     .line:nth-child(3) {
-      transform: rotate(45deg) translate(-6px, -6px);
+      transform:  rotate(-135deg);
+    }
+
+    .line:nth-child(4) {
+      transform: scale(0,1) translate(0, -10px);
     }
   }
 }
