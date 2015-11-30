@@ -8,4 +8,14 @@
 
 	{{ post.content }}
 
+	<p>
+		<a class="button secondary" href="{{ archivelink }}">
+			&blacktriangleleft; {{ __('Jokes overview', 'tp') }}
+		</a>
+
+		<a class="button" href="{{ nextpostlink }}">
+			{{ __('Next joke', 'tp') }} &blacktriangleright;
+		</a>
+	</p>
+
 {% endblock %}

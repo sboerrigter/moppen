@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TrendPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-11-03 22:15+0100\n"
-"PO-Revision-Date: 2015-11-03 22:15+0100\n"
+"POT-Creation-Date: 2015-11-30 20:34+0100\n"
+"PO-Revision-Date: 2015-11-30 20:34+0100\n"
 "Last-Translator: Sjoerd Boerrigter <sjoerd@trendwerk.nl>\n"
 "Language-Team: Ontwerpstudio Trendwerk <info@trendwerk.nl>\n"
 "Language: nl_NL\n"
@@ -97,10 +97,6 @@ msgstr "Geen resultaten gevonden."
 msgid "Copyright"
 msgstr "Copyright"
 
-#: ../../templates/partials/post-meta.twig:2
-msgid "Submitted by"
-msgstr "Toegevoegd door"
-
 #: ../../templates/partials/tags.twig:6
 msgid "Tags"
 msgstr "Tags"
@@ -118,6 +114,17 @@ msgstr ""
 "Je zoekopdracht voor <em>&quot;%1$s&quot;</em> heeft geen resultaten "
 "opgeleverd. Controleer of alle woorden correct gespeld zijn of probeer een "
 "andere zoekterm."
+
+#: ../../templates/single.twig:12
+msgid "Jokes overview"
+msgstr "Moppen overzicht"
+
+#: ../../templates/single.twig:16
+msgid "Next joke"
+msgstr "Volgende mop"
+
+#~ msgid "Submitted by"
+#~ msgstr "Toegevoegd door"
 
 #~ msgid "Posted on"
 #~ msgstr "Geplaatst op"
@@ -411,9 +418,6 @@ msgstr ""
 
 #~ msgid "Remove"
 #~ msgstr "Verwijder"
-
-#~ msgid "Authors overview"
-#~ msgstr "Auteurs overzicht"
 
 #~ msgid "Top navigation"
 #~ msgstr "Top navigatie"
