@@ -1,11 +1,8 @@
-.logo {
+.logo a {
+  text-indent: -9999px;
+  @include sprite(0, 0);
   display: inline-block;
-  margin-top: 5px;
-
-  .site-name {
-    font-size: 28px;
-    font-family: $heading-font;
-    font-weight: 700;
-    margin: 0;
-  }
+  height: 35px;
+  margin: 5px 0 0 0;
+  width: 210px;
 }
