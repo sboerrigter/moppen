@@ -30,19 +30,19 @@
 
   &.active {
     .line:nth-child(1) {
-      transform:  scale(0,1) translate(0, 10px);
+      transform: scale(0, 1) translate(0, 10px);
     }
 
     .line:nth-child(2) {
-      transform:  rotate(135deg);
+      transform: rotate(135deg);
     }
 
     .line:nth-child(3) {
-      transform:  rotate(-135deg);
+      transform: rotate(-135deg);
     }
 
     .line:nth-child(4) {
-      transform: scale(0,1) translate(0, -10px);
+      transform: scale(0, 1) translate(0, -10px);
     }
   }
 }

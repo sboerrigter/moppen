@@ -1,5 +1,6 @@
 main {
   @include full-width();
+  border-top: 5px solid $light-blue;
   padding: $vertical-spacing 0 ($vertical-spacing / 2);
 
   @include respond-to('medium') {

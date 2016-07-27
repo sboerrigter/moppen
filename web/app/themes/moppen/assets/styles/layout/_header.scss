@@ -1,7 +1,6 @@
 .header {
   @include full-width();
   background-color: $primary-color;
-  border-bottom: 5px solid $light-blue;
   height: 85px;
   padding: 20px 0;
   text-align: left;

@@ -1,7 +1,7 @@
 @charset 'UTF-8';
 
 @import '../../bower_components/fancybox/source/jquery.fancybox';
-@import '../../bower_components/normalize-scss/normalize';
+@import '../../bower_components/normalize-scss/normalize.css';
 
 @import 'utils/functions/shade';
 @import 'utils/functions/tint';
@@ -42,7 +42,7 @@
 
 @import 'components/button';
 @import 'components/featured';
-@import 'components/_gravity-forms.scss';
+@import 'components/gravity-forms';
 @import 'components/logo';
 @import 'components/meta';
 @import 'components/navigation-icon';

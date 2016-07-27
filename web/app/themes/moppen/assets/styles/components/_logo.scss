@@ -1,8 +1,9 @@
 .logo a {
-  text-indent: -9999px;
   @include sprite(0, 0);
+
   display: inline-block;
   height: 35px;
-  margin: 5px 0 0 0;
+  margin: 5px 0 0;
+  text-indent: -9999px;
   width: 210px;
 }
