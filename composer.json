@@ -33,22 +33,22 @@
 	"repositories": [
 		{
 			"type": "composer",
-			"url": "http://wpackagist.org"
+			"url": "https://wpackagist.org"
 		},
 		{
 			"type": "composer",
-			"url": "http://languages.koodimonni.fi"
+			"url": "https://languages.koodimonni.fi"
 		},
 		{
             "type": "package",
             "package": {
-                "name": "gravityforms/gravityforms",
+                "name": "wp-premium/gravityforms",
                 "type": "wordpress-plugin",
-                "version": "1.9.10.15",
+                "version": "2.0.3",
                 "source": {
                     "type": "git",
-                    "url": "https://github.com/gravityforms/gravityforms.git",
-                    "reference": "1.9.10.15"
+                    "url": "https://github.com/wp-premium/gravityforms.git",
+                    "reference": "2.0.3"
                 }
             }
         }
@@ -59,19 +59,20 @@
 	},
 	"require": {
 		"php": ">=5.5",
-		"composer/installers": "*",
-		"gravityforms/gravityforms": "*",
+	    "composer/installers": "~1.0",
+	    "oscarotero/env": "^1.0",
+	    "vlucas/phpdotenv": "~2.0",
 		"johnpbloch/wordpress": "*",
 		"koodimonni-language/core-nl_nl": "*",
 		"trendwerk/editor-capabilities": "*",
 		"trendwerk/post-type-menu-highlight": "*",
-		"vlucas/phpdotenv": "*",
 		"wpackagist-plugin/google-analytics-for-wordpress": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
 		"wpackagist-plugin/limit-login-attempts": "*",
 		"wpackagist-plugin/timber-library": "*",
 		"wpackagist-plugin/wordpress-seo": "*",
-		"wpackagist-plugin/wp-retina-2x": "*"
+		"wpackagist-plugin/wp-retina-2x": "*",
+		"wp-premium/gravityforms": "2.0.3"
 
 	},
 	"extra": {

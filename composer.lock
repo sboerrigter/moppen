@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4e8a45c5b3d6255cca1e7b869ac5b217",
-    "content-hash": "81e977b8f71b2011bebfc781c7195e95",
+    "hash": "6e1cae96aeb8dfc6f2d95d5ff57cd803",
+    "content-hash": "781ab3d97a68e6800122822cc584d39e",
     "packages": [
         {
             "name": "composer/installers",
@@ -101,27 +101,17 @@
             "time": "2014-11-29 01:29:17"
         },
         {
-            "name": "gravityforms/gravityforms",
-            "version": "1.9.10.15",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/gravityforms/gravityforms.git",
-                "reference": "1.9.10.15"
-            },
-            "type": "wordpress-plugin"
-        },
-        {
             "name": "johnpbloch/wordpress",
-            "version": "4.3.1",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
+                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
-                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
+                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +135,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2015-09-15 15:01:23"
+            "time": "2016-06-21 16:31:21"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -197,10 +187,10 @@
         },
         {
             "name": "koodimonni-language/core-nl_nl",
-            "version": "4.3.1",
+            "version": "4.5.3",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.3.1/nl_NL.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.5.3/nl_NL.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -218,20 +208,23 @@
         },
         {
             "name": "koodimonni/composer-dropin-installer",
-            "version": "0.2.4",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Koodimonni/Composer-Dropin-Installer.git",
-                "reference": "618b96fd3bc8c1532610b7f7baedc4e60736a340"
+                "reference": "1903a3a1e981a783618aad9e322a12ad39ad1760"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/618b96fd3bc8c1532610b7f7baedc4e60736a340",
-                "reference": "618b96fd3bc8c1532610b7f7baedc4e60736a340",
+                "url": "https://api.github.com/repos/Koodimonni/Composer-Dropin-Installer/zipball/1903a3a1e981a783618aad9e322a12ad39ad1760",
+                "reference": "1903a3a1e981a783618aad9e322a12ad39ad1760",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*-dev"
             },
             "type": "composer-plugin",
             "extra": {
@@ -253,24 +246,66 @@
                 }
             ],
             "description": "Do what the fuck you want with your composer packages aka. Composer Dropin installer. Install packages or part of packages into custom paths without overwriting existing stuff.",
-            "time": "2015-01-04 10:24:12"
+            "time": "2016-07-11 09:21:59"
         },
         {
-            "name": "trendwerk/editor-capabilities",
-            "version": "1.0.0",
+            "name": "oscarotero/env",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
-                "url": "https://github.com/trendwerk/editor-capabilities.git",
-                "reference": "181253f6fc10f616b9f6ae6ffb7c06cb5b8e59ac"
+                "url": "https://github.com/oscarotero/env.git",
+                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trendwerk/editor-capabilities/zipball/181253f6fc10f616b9f6ae6ffb7c06cb5b8e59ac",
-                "reference": "181253f6fc10f616b9f6ae6ffb7c06cb5b8e59ac",
+                "url": "https://api.github.com/repos/oscarotero/env/zipball/0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
+                "reference": "0819fd764ca19ab880b8d9ed7a95ae4910f98f20",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "v1.0.19",
+                "php": ">=5.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Env": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Oscar Otero",
+                    "email": "oom@oscarotero.com",
+                    "homepage": "http://oscarotero.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple library to consume environment variables",
+            "homepage": "https://github.com/oscarotero/env",
+            "keywords": [
+                "env"
+            ],
+            "time": "2016-05-08 17:14:32"
+        },
+        {
+            "name": "trendwerk/editor-capabilities",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trendwerk/editor-capabilities.git",
+                "reference": "9f5b4b078f6633500dedce7270786e9f64f988cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trendwerk/editor-capabilities/zipball/9f5b4b078f6633500dedce7270786e9f64f988cf",
+                "reference": "9f5b4b078f6633500dedce7270786e9f64f988cf",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1",
                 "php": ">=5.4"
             },
             "type": "wordpress-muplugin",
@@ -285,24 +320,24 @@
                 }
             ],
             "description": "Sets up the editor role a bit different. Made for WordPress.",
-            "time": "2015-01-30 12:24:18"
+            "time": "2016-07-14 08:48:29"
         },
         {
             "name": "trendwerk/post-type-menu-highlight",
-            "version": "1.1.2",
+            "version": "1.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trendwerk/post-type-menu-highlight.git",
-                "reference": "bacd6f253fc1dd74b61e975e2965a8b1ba09cba8"
+                "reference": "391767d8ef735c5414cab1736ce30931a7500738"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trendwerk/post-type-menu-highlight/zipball/bacd6f253fc1dd74b61e975e2965a8b1ba09cba8",
-                "reference": "bacd6f253fc1dd74b61e975e2965a8b1ba09cba8",
+                "url": "https://api.github.com/repos/trendwerk/post-type-menu-highlight/zipball/391767d8ef735c5414cab1736ce30931a7500738",
+                "reference": "391767d8ef735c5414cab1736ce30931a7500738",
                 "shasum": ""
             },
             "require": {
-                "composer/installers": "v1.0.19",
+                "composer/installers": "~1",
                 "php": ">=5.4"
             },
             "type": "wordpress-muplugin",
@@ -317,32 +352,32 @@
                 }
             ],
             "description": "Fixes classes in main menu. Made for WordPress.",
-            "time": "2015-04-24 13:38:22"
+            "time": "2016-07-14 08:54:25"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.1.0",
+            "version": "v2.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59"
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/c10040e0df17d2ee88e9212b50cbe9319e878f59",
-                "reference": "c10040e0df17d2ee88e9212b50cbe9319e878f59",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "^4.8 || ^5.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -352,7 +387,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "BSD"
+                "BSD-3-Clause-Attribution"
             ],
             "authors": [
                 {
@@ -362,25 +397,34 @@
                 }
             ],
             "description": "Loads environment variables from `.env` to `getenv()`, `$_ENV` and `$_SERVER` automagically.",
-            "homepage": "http://github.com/vlucas/phpdotenv",
             "keywords": [
                 "dotenv",
                 "env",
                 "environment"
             ],
-            "time": "2015-10-28 18:53:35"
+            "time": "2016-06-14 14:14:52"
+        },
+        {
+            "name": "wp-premium/gravityforms",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wp-premium/gravityforms.git",
+                "reference": "2.0.3"
+            },
+            "type": "wordpress-plugin"
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.4.6",
+            "version": "5.5.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.4.6"
+                "url": "https://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
+                "reference": "tags/5.5.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.4.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -392,15 +436,15 @@
         },
         {
             "name": "wpackagist-plugin/gravity-forms-custom-post-types",
-            "version": "3.0.1",
+            "version": "3.1.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/gravity-forms-custom-post-types/",
-                "reference": "tags/3.0.1"
+                "url": "https://plugins.svn.wordpress.org/gravity-forms-custom-post-types/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/gravity-forms-custom-post-types.3.0.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/gravity-forms-custom-post-types.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -415,7 +459,7 @@
             "version": "1.7.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/limit-login-attempts/",
+                "url": "https://plugins.svn.wordpress.org/limit-login-attempts/",
                 "reference": "tags/1.7.1"
             },
             "dist": {
@@ -432,15 +476,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "0.22.0",
+            "version": "1.1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/0.22.0"
+                "url": "https://plugins.svn.wordpress.org/timber-library/",
+                "reference": "tags/1.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.0.22.0.zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.1.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -452,15 +496,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.3.5",
+            "version": "3.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.3.5"
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/3.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.3.5.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -472,15 +516,15 @@
         },
         {
             "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "3.5.4",
+            "version": "4.5.5",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/3.5.4"
+                "url": "https://plugins.svn.wordpress.org/wp-retina-2x/",
+                "reference": "tags/4.5.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.3.5.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.4.5.5.zip",
                 "reference": null,
                 "shasum": null
             },
