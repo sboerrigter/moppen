@@ -1,6 +1,6 @@
 /// Sprite
 @mixin sprite($top, $left) {
-  background-image: url('../../../assets/images/sprite.png');
+  background-image: url('../../../assets/images/sprite@1x.png');
   background-position: $top $left;
   background-repeat: no-repeat;
 
