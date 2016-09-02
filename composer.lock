@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e1cae96aeb8dfc6f2d95d5ff57cd803",
-    "content-hash": "781ab3d97a68e6800122822cc584d39e",
+    "hash": "2c2c7bed5ce824b73702c98670f2e252",
+    "content-hash": "24422f203e5499b86f61052f1d469205",
     "packages": [
         {
             "name": "composer/installers",
@@ -102,16 +102,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.5.3",
+            "version": "4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715"
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
-                "reference": "f5c6f4dd899e6365ddf2752d2705ed1de7e10715",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/1fb4b67e331d82f9061eaf3fcbc94163db85c135",
+                "reference": "1fb4b67e331d82f9061eaf3fcbc94163db85c135",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-06-21 16:31:21"
+            "time": "2016-08-16 18:32:04"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -187,10 +187,10 @@
         },
         {
             "name": "koodimonni-language/core-nl_nl",
-            "version": "4.5.3",
+            "version": "4.6",
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/translation/core/4.5.3/nl_NL.zip",
+                "url": "https://downloads.wordpress.org/translation/core/4.6/nl_NL.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -324,16 +324,16 @@
         },
         {
             "name": "trendwerk/post-type-menu-highlight",
-            "version": "1.1.5",
+            "version": "1.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/trendwerk/post-type-menu-highlight.git",
-                "reference": "391767d8ef735c5414cab1736ce30931a7500738"
+                "reference": "0945f74181bd7c21bb201d42efbccd5f0312f144"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/trendwerk/post-type-menu-highlight/zipball/391767d8ef735c5414cab1736ce30931a7500738",
-                "reference": "391767d8ef735c5414cab1736ce30931a7500738",
+                "url": "https://api.github.com/repos/trendwerk/post-type-menu-highlight/zipball/0945f74181bd7c21bb201d42efbccd5f0312f144",
+                "reference": "0945f74181bd7c21bb201d42efbccd5f0312f144",
                 "shasum": ""
             },
             "require": {
@@ -352,20 +352,20 @@
                 }
             ],
             "description": "Fixes classes in main menu. Made for WordPress.",
-            "time": "2016-07-14 08:54:25"
+            "time": "2016-08-02 14:11:10"
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v2.3.0",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a"
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/9ca5644c536654e9509b9d257f53c58630eb2a6a",
-                "reference": "9ca5644c536654e9509b9d257f53c58630eb2a6a",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
+                "reference": "3cc116adbe4b11be5ec557bf1d24dc5e3a21d18c",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -402,7 +402,7 @@
                 "env",
                 "environment"
             ],
-            "time": "2016-06-14 14:14:52"
+            "time": "2016-09-01 10:05:43"
         },
         {
             "name": "wp-premium/gravityforms",
@@ -413,6 +413,26 @@
                 "reference": "2.0.3"
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "wpackagist-plugin/akismet",
+            "version": "3.1.11",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/akismet/",
+                "reference": "tags/3.1.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.11.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
             "name": "wpackagist-plugin/google-analytics-for-wordpress",
@@ -436,7 +456,7 @@
         },
         {
             "name": "wpackagist-plugin/gravity-forms-custom-post-types",
-            "version": "3.1.4",
+            "version": "3.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/gravity-forms-custom-post-types/",
@@ -476,15 +496,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.1.1",
+            "version": "1.1.4",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.1.1"
+                "reference": "tags/1.1.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.1.4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -496,15 +516,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.4",
+            "version": "3.4.2",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.4"
+                "reference": "tags/3.4.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.4.2.zip",
                 "reference": null,
                 "shasum": null
             },

@@ -66,6 +66,7 @@
 		"koodimonni-language/core-nl_nl": "*",
 		"trendwerk/editor-capabilities": "*",
 		"trendwerk/post-type-menu-highlight": "*",
+		"wpackagist-plugin/akismet": "*",
 		"wpackagist-plugin/google-analytics-for-wordpress": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
 		"wpackagist-plugin/limit-login-attempts": "*",
