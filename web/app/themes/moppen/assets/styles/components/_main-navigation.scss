@@ -1,0 +1,48 @@
+.main-navigation {
+  @include wrapper-padding();
+  width: 100%;
+
+  @include respond-to('toggle-navigation') {
+    float: right;
+    padding: 0;
+    width: auto;
+  }
+
+  .menu {
+    @include list-style-none();
+  }
+
+  .menu-item {
+    @include respond-to('toggle-navigation') {
+      float: left;
+      margin-left: 5px;
+    }
+
+    a {
+      $horizontal-padding: 20px;
+
+      border-bottom: 2px solid tint($primary-color, 25%);
+      display: block;
+      font-size: map-get($font-sizes, 'text');
+      font-weight: bold;
+      padding: 10px $horizontal-padding;
+
+      @include respond-to('toggle-navigation') {
+        border: 0;
+        line-height: map-get($header-height, 'full');
+        padding: 0 $horizontal-padding;
+      }
+    }
+
+    &:last-child a {
+      border: 0;
+    }
+
+    &.current-menu-ancestor a,
+    &.current-menu-item a,
+    &.current-menu-parent a,
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

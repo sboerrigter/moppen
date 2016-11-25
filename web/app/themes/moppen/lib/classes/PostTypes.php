@@ -3,7 +3,7 @@
  * Post Types
  */
 
-namespace Trendwerk\TrendPress;
+namespace Sboerrigter\Moppen;
 
 final class PostTypes
 {

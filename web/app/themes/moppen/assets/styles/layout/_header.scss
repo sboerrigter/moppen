@@ -1,30 +1,17 @@
 .header {
   @include full-width();
+  @include toggle-navigation((
+    'height': map-get($header-height, 'toggle-navigation'),
+    'item': '.menu-item',
+    'menu': '.main-navigation',
+    'until': map-get($breakpoints, 'toggle-navigation'),
+  ));
   background-color: $primary-color;
-  height: 85px;
-  padding: 20px 0;
-  text-align: left;
+  height: map-get($header-height, 'toggle-navigation');
+  z-index: 1;
 
   a {
     color: $white;
     text-decoration: none;
-  }
-
-  .mobile-navigation {
-    cursor: pointer;
-    float: right;
-    margin-right: -10px;
-    padding: 10px;
-  }
-
-  .header-search {
-    display: none;
-    float: right;
-    margin-top: 20px;
-    width: 100%;
-
-    @include respond-to('small') {
-      margin-top: 10px;
-    }
   }
 }

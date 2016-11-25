@@ -1,23 +1,17 @@
-<div class="comments">
+{% if fn('comments_open') %}
+  <div class="comments">
+    {% if post.get_comment_count() > 0 %}
+      <h2>
+        {{ __('Comments', 'tp') }}
+      </h2>
 
-	{% if have_comments %}
+      <ol>
+        {% for comment in post.comments() %}
+          {% include 'partials/comment.twig' %}
+        {% endfor %}
+      </ol>
+    {% endif %}
 
-		<h2>
-			{{ fn('_n', 'One response to &ldquo;%2$s&rdquo;', '%1$s responses to &ldquo;%2$s&rdquo;', post.comment_count, 'tp')|format(post.comment_count,'<span>'~post.title~'</span>') }}
-		</h2>
-		
-		<ol>
-			{{ comment_list }}
-		</ol>
-
-		{% if comment_pages %}
-			<nav class="pager">
-				{{ comment_pages }}
-			</nav>
-		{% endif %}
-
-	{% endif %}
-
-	{{ fn('comment_form', {'comment_notes_after': ''}) }}
-
-</div>
+    {{ fn('comment_form', {'comment_notes_after': ''}) }}
+  </div>
+{% endif %}

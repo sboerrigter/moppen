@@ -1,11 +1,12 @@
 .meta {
   color: $text-light;
+  font-size: map-get($font-sizes, 'text-small');
 
   a {
-    color: $text-color;
+    color: $text-light;
 
     &:hover {
-      color: $link-color;
+      color: $hover-color;
     }
   }
 }

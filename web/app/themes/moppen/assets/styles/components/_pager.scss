@@ -1,34 +1,60 @@
 .pager {
   @include full-width();
-  margin: $vertical-spacing 0;
   text-align: center;
 
-  .pages {
-    @include list-style-none();
+  a,
+  .current {
+    display: inline-block;
+    font-size: map-get($font-sizes, 'text-small');
+    font-weight: 700;
+    height: 3em;
+    line-height: 3em;
+    margin: 0 10px 10px 0;
+    min-width: 3em;
+    padding: 0 1em;
+    text-decoration: none;
+  }
+
+  a {
+    @include hover((
+      'background-color': $primary-color,
+      'color': $white,
+    ));
+    background: $light-background;
+    color: $text-color;
+  }
+
+  .current {
+    background: $light-grey;
+  }
+
+  .prev {
+    float: left;
+
+    @include respond-to('medium') {
+      float: none;
+    }
+  }
+
+  .next {
+    float: right;
+    margin-right: 0;
+
+    @include respond-to('medium') {
+      float: none;
+    }
   }
 
   .dots,
-  .page-numbers,
-  .prev,
-  .next {
-    @include box-link((
-      'height': 40px,
-      'horizontal-padding': 20px,
-      'margin': 10px,
-    ));
-    @include hover((
-      'background-color': shade($primary-color, 15%),
-      'color': $white,
-    ));
-    font-weight: bold;
+  .page-number {
+    display: none;
 
-    &.current,
-    &.dots {
-      @include hover((
-        'background-color': auto,
-        'color': inherit,
-      ));
-      background-color: tint($light-background, 75%);
+    @include respond-to('medium') {
+      display: inline-block;
     }
+  }
+
+  .dots {
+    margin: 0 15px 0 5px;
   }
 }

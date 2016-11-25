@@ -1,8 +1,0 @@
-/// Tag
-@mixin tag() {
-  @include box-link();
-  @include hover((
-  	'background-color': $primary-color,
-  	'color': $white,
-  ));
-}

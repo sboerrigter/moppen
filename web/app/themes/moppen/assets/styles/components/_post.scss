@@ -1,15 +1,14 @@
 .post {
   @include full-width();
-  margin: 0 0 $vertical-spacing;
-  padding: 0 0 $vertical-spacing;
+  @include responsive-margin-bottom();
 
   &.sticky {
-    @include box();
-    margin-bottom: ($vertical-spacing * 2);
+    background: $light-background;
+    padding: $box-padding;
   }
 
   h2 {
-    margin-bottom: ($vertical-spacing / 2);
+    margin-bottom: 0;
   }
 
   p:last-of-type {
