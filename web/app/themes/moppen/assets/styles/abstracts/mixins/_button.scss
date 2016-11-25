@@ -1,22 +1,27 @@
 @mixin button() {
   @include hover((
-    'background-color': shade($secondary-color, 10%),
+    'background-color': shade($primary-color, 10%),
     'color': $white,
   ));
-  background-color: $secondary-color;
+  background-color: $primary-color;
   border: 0; // Remove border from button inputs
   border-radius: 3px; // Fix for buttons on iOS
   color: $white;
   display: inline-block;
   font-weight: 700;
   line-height: map-get($line-height, 'small');
-  margin-right: 10px;
+  margin: 10px 10px 0 0;
   padding: 0.75em 2em;
   text-decoration: none;
   text-transform: uppercase;
   white-space: normal; // Fix for wide button inputs that won't flow to the next line
 
   &.secondary {
-    background-color: $primary-color;
+    background-color: $secondary-color;
+
+    @include hover((
+      'background-color': shade($secondary-color, 10%),
+      'color': $white,
+    ));
   }
 }
