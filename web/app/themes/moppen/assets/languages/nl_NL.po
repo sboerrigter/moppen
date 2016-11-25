@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TrendPress\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-11-25 22:20+0100\n"
-"PO-Revision-Date: 2016-11-25 22:26+0100\n"
+"POT-Creation-Date: 2016-11-25 23:38+0100\n"
+"PO-Revision-Date: 2016-11-25 23:38+0100\n"
 "Last-Translator: Sjoerd Boerrigter <sjoerd@trendwerk.nl>\n"
 "Language-Team: Ontwerpstudio Trendwerk <info@trendwerk.nl>\n"
 "Language: nl_NL\n"
@@ -79,7 +79,7 @@ msgstr ""
 msgid "To the homepage"
 msgstr "Naar de homepagina"
 
-#: ../../templates/base/base.twig:6 ../../templates/index.twig:18
+#: ../../templates/base/base.twig:6 ../../templates/index.twig:26
 msgid "No results found."
 msgstr "Geen resultaten gevonden."
 
@@ -91,10 +91,6 @@ msgstr "Copyright"
 msgid "Comments"
 msgstr "Reacties"
 
-#: ../../templates/partials/loop-post.twig:10
-msgid "Read more"
-msgstr "Lees verder"
-
 #: ../../templates/partials/pagination.twig:6
 msgid "Previous"
 msgstr "Vorige"
@@ -103,17 +99,25 @@ msgstr "Vorige"
 msgid "Next"
 msgstr "Volgende"
 
-#: ../../templates/partials/post-meta.twig:2
-msgid "Posted on"
-msgstr "Geplaatst op"
+#: ../../templates/single.twig:13
+msgid "Jokes overview"
+msgstr "Moppen overzicht"
 
-#: ../../templates/partials/post-meta.twig:3
-msgid "by"
-msgstr "door"
+#: ../../templates/single.twig:17
+msgid "Next joke"
+msgstr "Volgende mop"
 
-#: ../../templates/partials/post-meta.twig:6
-msgid "in the category"
-msgstr "in de categorie"
+#~ msgid "Read more"
+#~ msgstr "Lees verder"
+
+#~ msgid "Posted on"
+#~ msgstr "Geplaatst op"
+
+#~ msgid "by"
+#~ msgstr "door"
+
+#~ msgid "in the category"
+#~ msgstr "in de categorie"
 
 #~ msgid "Secondary button"
 #~ msgstr "Secondaire knop"
@@ -429,9 +433,6 @@ msgstr "in de categorie"
 
 #~ msgid "Remove"
 #~ msgstr "Verwijder"
-
-#~ msgid "Authors overview"
-#~ msgstr "Auteurs overzicht"
 
 #~ msgid "Top navigation"
 #~ msgstr "Top navigatie"
