@@ -1,9 +1,11 @@
 .wp-caption {
-  margin-bottom: $vertical-spacing;
   max-width: 100%;
-  text-align: center;
+}
 
-  .wp-caption-text {
-    @include caption;
-  }
+.wp-caption-dd,
+.wp-caption-text {
+  font-size: map-get($font-sizes, 'text-small');
+  font-style: italic;
+  line-height: map-get($line-height, 'small');
+  width: 100%;
 }

@@ -1,9 +1,0 @@
-.tags {
-  span {
-    padding-right: $horizontal-spacing;
-  }
-
-  .tag {
-    @include tag();
-  }
-}

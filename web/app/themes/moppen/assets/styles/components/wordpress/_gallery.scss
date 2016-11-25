@@ -1,108 +1,56 @@
 .gallery {
-  clear: both;
-  float: left;
-  margin-bottom: $vertical-spacing;
-  width: 100%;
+  $images-per-row: 5;
+  $margin: 20px;
+  $wrapper-padding: map-get($wrapper, 'padding');
+  $padding-small: map-get($wrapper-padding, 'small') * 2;
+  $padding-medium: map-get($wrapper-padding, 'medium') * 2;
+  $available-space: ($content-width - $padding-medium) - (($images-per-row - 1) * $margin);
+  $width: $available-space / $images-per-row;
+
+  @include full-width();
+  @include grid((
+    'breakpoints': (
+      0: ($images-per-row - 3),
+      ($width * 2) + $margin + $padding-small + 1px: ($images-per-row - 2),
+      ($width * 3) + ($margin * 2) + $padding-small + 1px: ($images-per-row - 1),
+      ($width * 4) + ($margin * 3) + $padding-medium + 1px: $images-per-row,
+    ),
+    'item': '.gallery-item',
+    'margin': $margin,
+  ));
+  @include responsive-margin-bottom(40px);
+  margin-top: 20px;
 
   .gallery-item {
     float: left;
-    margin: 0 4px 4px 0;
-    overflow: hidden;
-    padding: 0;
     position: relative;
 
     img {
-      float: left;
-      height: auto;
-      width: 100%;
+      display: block;
     }
 
     &:hover .gallery-caption {
-      opacity: 1;
+      display: block;
     }
   }
 
   .gallery-caption {
-    @include caption;
+    $font-size: 14px;
+    $line-height: 1.5;
+    $max-lines: 2;
+    $padding: 5px;
+
     background-color: $black;
     bottom: 0;
     color: $white;
-    left: 0;
+    display: none;
+    font-size: $font-size;
+    line-height: $line-height;
     margin: 0;
-    max-height: 50%;
-    opacity: 0;
+    max-height: (($font-size * $line-height * $max-lines) + ($padding * 2));
+    overflow: hidden;
+    padding: $padding ($padding * 2);
     position: absolute;
-    transition: opacity, 400ms, ease-in-out;
-
-    &::before {
-      box-shadow: 0 -10px 15px $black inset;
-      content: '';
-      height: 100%;
-      left: 0;
-      min-height: 50px;
-      position: absolute;
-      top: 0;
-      width: 100%;
-    }
+    text-align: center;
   }
-}
-
-.gallery-item {
-  width: auto;
-}
-
-.gallery-columns-1 .gallery-item {
-  max-width: 100%;
-}
-
-.gallery-columns-2 .gallery-item {
-  max-width: 48%;
-  max-width: calc(50% - 14px);
-}
-
-.gallery-columns-3 .gallery-item {
-  max-width: 32%;
-  max-width: calc(33.3% - 11px);
-}
-
-.gallery-columns-4 .gallery-item {
-  max-width: 23%;
-  max-width: calc(25% - 9px);
-}
-
-.gallery-columns-5 .gallery-item {
-  max-width: 19%;
-  max-width: calc(20% - 8px);
-}
-
-.gallery-columns-6 .gallery-item {
-  max-width: 15%;
-  max-width: calc(16.7% - 7px);
-}
-
-.gallery-columns-7 .gallery-item {
-  max-width: 13%;
-  max-width: calc(14.28% - 7px);
-}
-
-.gallery-columns-8 .gallery-item {
-  max-width: 11%;
-  max-width: calc(12.5% - 6px);
-}
-
-.gallery-columns-9 .gallery-item {
-  max-width: 9%;
-  max-width: calc(11.1% - 6px);
-}
-
-@for $i from 1 through 9 {
-  .gallery-columns-#{$i} .gallery-item:nth-of-type(#{$i}n) {
-    margin-right: 0;
-  }
-}
-
-.gallery-columns-7 .gallery-caption,
-.gallery-columns-8 .gallery-caption,
-.gallery-columns-9 .gallery-caption {
-  display: none;
 }

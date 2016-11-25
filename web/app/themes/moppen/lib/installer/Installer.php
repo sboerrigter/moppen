@@ -1,17 +1,10 @@
 <?php
-/**
- * Composer install script
- */
-
-namespace Trendwerk\TrendPress;
+namespace Sboerrigter\Moppen;
 
 use Composer\Script\Event;
 
 final class Installer
 {
-    /**
-     * Set namespace for theme
-     */
     public static function setNamespace($event)
     {
         $io = $event->getIO();
@@ -22,8 +15,9 @@ final class Installer
 
         $root = dirname(dirname(__DIR__));
         $defaultNamespace = __NAMESPACE__;
+        $question = '<question>What namespace would you like to use?</question>';
 
-        $namespace = $io->ask('<question>What namespace would you like to use?</question> [<comment>' . $defaultNamespace . '</comment>] ', $defaultNamespace);
+        $namespace = $io->ask($question . ' [<comment>' . $defaultNamespace . '</comment>] ', $defaultNamespace);
 
         if ($namespace == $defaultNamespace || 0 == strlen($namespace)) {
             $io->write('Using default namespace');
@@ -37,14 +31,7 @@ final class Installer
         return 1;
     }
 
-    /**
-     * Rename namespace for all files in directory (recursively)
-     *
-     * @param string $dir Directory which to rename
-     * @param string $fromNamespace
-     * @param string $toNamespace
-     */
-    public static function renameNamespaceInDir($dir, $fromNamespace, $toNamespace)
+    private static function renameNamespaceInDir($dir, $fromNamespace, $toNamespace)
     {
         $changedFiles = 0;
         $files = scandir($dir);
@@ -54,11 +41,12 @@ final class Installer
         }
 
         foreach ($files as $file) {
-            $extension = end((explode('.', $file)));
-
             if (in_array($file, array('.', '..', 'node_modules', 'vendor'))) {
                 continue;
             }
+
+            $splitByDot = explode('.', $file);
+            $extension = end($splitByDot);
 
             if ($extension == 'php') {
                 $changed = self::renameNamespaceInFile($dir . '/' . $file, $fromNamespace, $toNamespace);
@@ -66,7 +54,7 @@ final class Installer
                 if ($changed) {
                     $changedFiles++;
                 }
-            } else if (is_dir($dir . '/' . $file)) {
+            } elseif (is_dir($dir . '/' . $file)) {
                 $changedFiles += self::renameNamespaceInDir($dir . '/' . $file, $fromNamespace, $toNamespace);
             }
         }
@@ -74,14 +62,7 @@ final class Installer
         return $changedFiles;
     }
 
-    /**
-     * Rename namespace in file
-     *
-     * @param string $file
-     * @param string $fromNamespace
-     * @param string $toNamespace
-     */
-    public static function renameNamespaceInFile($file, $fromNamespace, $toNamespace)
+    private static function renameNamespaceInFile($file, $fromNamespace, $toNamespace)
     {
         $_contents = $contents = file_get_contents($file);
         $contents = str_replace($fromNamespace, $toNamespace, $contents);
@@ -94,9 +75,6 @@ final class Installer
         return false;
     }
 
-    /**
-     * Set theme data
-     */
     public static function setThemeData($event)
     {
         $io = $event->getIO();
@@ -119,8 +97,10 @@ final class Installer
 
             if (isset($value[1]) && strlen(trim($value[1])) > 0) {
                 $currentSettings[$setting] = trim($value[1]);
+                $question = '<question>' . $setting . ':</question>';
+                $comment = '[<comment>' . $currentSettings[$setting] . '</comment>]';
 
-                $newSettings[$setting] = $io->ask('<question>' . $setting . ':</question> [<comment>' . $currentSettings[$setting] . '</comment>] ', $currentSettings[$setting]);
+                $newSettings[$setting] = $io->ask($question . ' ' . $comment . ' ', $currentSettings[$setting]);
             }
         }
 
@@ -128,7 +108,8 @@ final class Installer
             if ($value == $currentSettings[$setting] || 0 == strlen($value)) {
                 $io->write('Using default ' . $setting);
             } else {
-                $contents = preg_replace('/(.+)' . $setting . ': (\s+)(.+)/', '$1' . $setting . ': $2' . $value, $contents);
+                $regex = '/(.+)' . $setting . ': (\s+)(.+)/';
+                $contents = preg_replace($regex, '$1' . $setting . ': $2' . $value, $contents);
             }
         }
 

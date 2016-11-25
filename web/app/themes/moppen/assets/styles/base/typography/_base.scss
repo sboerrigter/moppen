@@ -1,16 +1,21 @@
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic);
-
 html {
   -webkit-font-smoothing: antialiased;
 }
 
 body {
+  $base: map-get($font-sizes, 'base');
+
   color: $text-color;
   font-family: $text-font;
-  font-size: 16px;
-  line-height: $line-height;
+  font-size: map-get($base, 'small');
+  line-height: map-get($line-height, 'base');
+  word-wrap: break-word;
+
+  @include respond-to('medium') {
+    font-size: map-get($base, 'medium');
+  }
 }
 
 p {
-  margin: 0 0 $vertical-spacing;
+  margin: 0 0 $text-margin;
 }

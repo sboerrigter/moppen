@@ -1,9 +1,5 @@
 <?php
-/**
- * Autoload classes
- */
-
-namespace Trendwerk\TrendPress;
+namespace Sboerrigter\Moppen;
 
 spl_autoload_register(function ($class) {
     $length = strlen(__NAMESPACE__);

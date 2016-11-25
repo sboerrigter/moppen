@@ -1,21 +1,13 @@
 {% extends 'base.twig' %}
 
 {% block content %}
+  <h1>
+    {{ post.title }}
+  </h1>
 
-	<h1>
-		{{ post.title }}
-	</h1>
+  {% include 'partials/post-meta.twig' %}
 
-	{{ post.content }}
+  {{ post.content }}
 
-	<p>
-		<a class="button secondary" href="{{ archivelink }}">
-			&blacktriangleleft; {{ __('Jokes overview', 'tp') }}
-		</a>
-
-		<a class="button" href="{{ nextpostlink }}">
-			{{ __('Next joke', 'tp') }} &blacktriangleright;
-		</a>
-	</p>
-
+  {% include 'partials/comments.twig' %}
 {% endblock %}

@@ -1,49 +1,30 @@
 <?php
-/**
- * Enqueue styles and scripts
- */
-
-namespace Trendwerk\TrendPress;
+namespace Sboerrigter\Moppen;
 
 final class Enqueue
 {
     public function __construct()
     {
-        add_action('wp_enqueue_scripts', array($this, 'frontend'));
+        add_action('wp_enqueue_scripts', [$this, 'frontend']);
     }
 
-    /**
-     * Enqueue styles and scripts for front-end
-     */
     public function frontend()
     {
-        $template_root = get_template_directory_uri();
-        $assets = $template_root . '/assets';
-        $bower = $template_root . '/bower_components';
+        $assetsPath = get_stylesheet_directory() . '/assets';
+        $assetsUri = get_stylesheet_directory_uri() . '/assets';
 
         /**
-         * Core
+         * Style
          */
-        wp_enqueue_script('comment-reply');
+        $stylePath = '/styles/output/main.css';
+        $styleModTime = filemtime($assetsPath . $stylePath);
+        wp_enqueue_style('main', $assetsUri . $stylePath, null, $styleModTime);
 
         /**
-         * Scripts
+         * Script
          */
-        wp_enqueue_script('defer', $assets . '/scripts/output/defer.js', array('jquery'), false, true);
-
-        wp_localize_script('defer', 'Assets', array(
-            'scripts' => $assets . '/scripts/output',
-        ));
-
-        /**
-         * Styles
-         */
-        wp_enqueue_style('main', $assets . '/styles/output/main.min.css');
-
-        /**
-         * jQuery from Google's CDN
-         */
-        wp_deregister_script('jquery');
-        wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js');
+        $scriptPath = '/scripts/output/all.js';
+        $scriptModTime = filemtime($assetsPath . $scriptPath);
+        wp_enqueue_script('main', $assetsUri . $scriptPath, null, $scriptModTime, true);
     }
 }

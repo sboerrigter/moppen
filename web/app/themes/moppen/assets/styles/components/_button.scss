@@ -1,12 +1,3 @@
 .button {
   @include button();
-  border-radius: 5px;
-
-  &.secondary {
-    @include hover((
-    	'background-color': shade($primary-color, 15%),
-    	'color': $white
-    ));
-    background-color: $primary-color;
-  }
 }
