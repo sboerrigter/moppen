@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "74c5dbf223fc6b67b403c6799c3a18f1",
-    "content-hash": "902b687327e2add6427472a51f95ac87",
+    "hash": "3f399ab16da4d762150550571c3b3756",
+    "content-hash": "bed7803ea87e95c35aecccada51cb029",
     "packages": [
         {
             "name": "composer/installers",
@@ -375,7 +375,7 @@
         },
         {
             "name": "wp-premium/gravityforms",
-            "version": "2.0.3",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-premium/gravityforms.git",
