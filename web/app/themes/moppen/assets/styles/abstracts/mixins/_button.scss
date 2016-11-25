@@ -18,5 +18,10 @@
 
   &.secondary {
     background-color: $primary-color;
+
+    @include hover((
+      'background-color': shade($primary-color, 10%),
+      'color': $white,
+    ));
   }
 }
