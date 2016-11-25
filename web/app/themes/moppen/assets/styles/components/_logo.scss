@@ -1,10 +1,9 @@
 .logo {
-  font-family: $heading-font;
-  font-size: map-get($font-sizes, 'h3');
-  font-weight: 600;
-  line-height: map-get($header-height, 'toggle-navigation');
+  @include sprite(0, 0);
 
-  @include respond-to('toggle-navigation') {
-    line-height: map-get($header-height, 'full');
-  }
+  display: inline-block;
+  height: 35px;
+  margin: 25px 0 0;
+  text-indent: -9999px;
+  width: 210px;
 }

@@ -12,13 +12,12 @@
 
   a {
     color: $white;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: none;
 
     &:active,
     &:focus,
     &:hover {
-      color: $text-light;
       text-decoration: underline;
     }
   }
