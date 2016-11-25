@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2c2c7bed5ce824b73702c98670f2e252",
-    "content-hash": "24422f203e5499b86f61052f1d469205",
+    "hash": "74c5dbf223fc6b67b403c6799c3a18f1",
+    "content-hash": "902b687327e2add6427472a51f95ac87",
     "packages": [
         {
             "name": "composer/installers",
@@ -292,38 +292,6 @@
             "time": "2016-05-08 17:14:32"
         },
         {
-            "name": "trendwerk/editor-capabilities",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/trendwerk/editor-capabilities.git",
-                "reference": "9f5b4b078f6633500dedce7270786e9f64f988cf"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/trendwerk/editor-capabilities/zipball/9f5b4b078f6633500dedce7270786e9f64f988cf",
-                "reference": "9f5b4b078f6633500dedce7270786e9f64f988cf",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1",
-                "php": ">=5.4"
-            },
-            "type": "wordpress-muplugin",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Harold Angenent",
-                    "email": "harold@trendwerk.nl"
-                }
-            ],
-            "description": "Sets up the editor role a bit different. Made for WordPress.",
-            "time": "2016-07-14 08:48:29"
-        },
-        {
             "name": "trendwerk/post-type-menu-highlight",
             "version": "1.1.6",
             "source": {
@@ -436,16 +404,16 @@
             "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
-            "name": "wpackagist-plugin/google-analytics-for-wordpress",
-            "version": "5.5.4",
+            "name": "wpackagist-plugin/autodescription",
+            "version": "2.7.0",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/google-analytics-for-wordpress/",
-                "reference": "tags/5.5.4"
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/google-analytics-for-wordpress.5.5.4.zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -453,7 +421,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/google-analytics-for-wordpress/"
+            "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
             "name": "wpackagist-plugin/gravity-forms-custom-post-types",
@@ -514,46 +482,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/timber-library/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "3.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/3.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.8.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
-        },
-        {
-            "name": "wpackagist-plugin/wp-retina-2x",
-            "version": "4.6.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wp-retina-2x/",
-                "reference": "tags/4.6.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wp-retina-2x.4.6.0.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wp-retina-2x/"
         }
     ],
     "packages-dev": [

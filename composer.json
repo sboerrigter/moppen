@@ -64,15 +64,12 @@
 	    "vlucas/phpdotenv": "~2.0",
 		"johnpbloch/wordpress": "*",
 		"koodimonni-language/core-nl_nl": "*",
-		"trendwerk/editor-capabilities": "*",
 		"trendwerk/post-type-menu-highlight": "*",
 		"wpackagist-plugin/akismet": "*",
-		"wpackagist-plugin/google-analytics-for-wordpress": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
 		"wpackagist-plugin/limit-login-attempts": "*",
 		"wpackagist-plugin/timber-library": "*",
-		"wpackagist-plugin/wordpress-seo": "*",
-		"wpackagist-plugin/wp-retina-2x": "*",
+		"wpackagist-plugin/autodescription": "*",
 		"wp-premium/gravityforms": "2.0.3"
 
 	},
