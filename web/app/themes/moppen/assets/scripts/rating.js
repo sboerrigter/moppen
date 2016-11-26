@@ -3,42 +3,31 @@ jQuery(($) => {
   let downvotes = parseInt($('.rating').data('downvotes'), 10);
   let rating = parseFloat($('.rating').data('rating'), 10);
 
-  $('.downvote').click(function () {
-    downvotes++;
-    updateRating();
-  });
-
-  $('.upvote').click(function () {
-    upvotes++;
-    updateRating();
-  });
-
   function updateRating() {
-
     /**
      * Calculate rating
      */
     rating = upvotes / (upvotes + downvotes);
 
     /**
-     * Update Post Meta
-     */
+    * Update Post Meta
+    */
     $.ajax({
-			url: ajax_object.ajax_url,
-			data: {
-				action: 'update_rating',
+      url: ajax_object.ajax_url,
+      data: {
+        action: 'update_rating',
         post_id: ajax_object.post_id,
-        upvotes: upvotes,
-        downvotes: downvotes,
-        rating: rating
-			}
-		});
+        upvotes,
+        downvotes,
+        rating,
+      },
+    });
 
     /**
      * Update rating view
      */
-    let width = rating * 100;
-    $('.rating .bar').css('width', width+'%');
+    const width = rating * 100;
+    $('.rating .bar').css('width', width + '%');
 
     /**
      * Set cookie
@@ -51,5 +40,15 @@ jQuery(($) => {
     /**
      * Disable rating buttons
      */
-  };
+  }
+
+  $('.downvote').click(function downvote() {
+    downvotes++;
+    updateRating();
+  });
+
+  $('.upvote').click(function upvote() {
+    upvotes++;
+    updateRating();
+  });
 });
