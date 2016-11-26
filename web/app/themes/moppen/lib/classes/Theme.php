@@ -30,5 +30,6 @@ final class Theme
         new Menus();
         new Plugins\Timber\Context();
         new PostTypes();
+        new Rating();
     }
 }
