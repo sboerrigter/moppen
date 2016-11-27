@@ -1,13 +1,7 @@
 <?php
 $context = Timber::get_context();
 
-$query = array(
-    'order'     => 'DESC',
-    'orderby'   => 'meta_value',
-    'meta_key'  => '_rating',
-    'post_type' => 'jokes',
-);
-$context['posts'] = Timber::get_posts($query, 'Sboerrigter\Moppen\TimberHelpers\Joke');
+$context['posts'] = Timber::get_posts(false, 'Sboerrigter\Moppen\TimberHelpers\Joke');
 
 if (is_archive()) {
     $context['title'] = 'Moppen';

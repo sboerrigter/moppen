@@ -30,6 +30,7 @@ final class Theme
         new Menus();
         new Plugins\Timber\Context();
         new PostTypes();
+        new Query();
         new Rating();
         new TimberHelpers\Joke();
     }
