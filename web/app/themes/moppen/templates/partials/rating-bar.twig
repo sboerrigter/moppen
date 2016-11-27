@@ -1,8 +1,8 @@
 <div
     class="rating"
-    data-upvotes="{{ post.upvotes }}"
-    data-downvotes="{{ post.downvotes }}"
-    data-rating="{{ post.rating }}"
+    data-upvotes="{{ post.rating.upvotes }}"
+    data-downvotes="{{ post.rating.downvotes }}"
+    data-rating="{{ post.rating.value }}"
 >
-    <div class="bar" style="width: {{ post.barwidth }}"></div>
+    <div class="bar" style="width: {{ post.rating.barwidth }}"></div>
 </div>

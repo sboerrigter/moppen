@@ -31,6 +31,6 @@ final class Theme
         new Plugins\Timber\Context();
         new PostTypes();
         new Rating();
-        new TimberHelpers\Post();
+        new TimberHelpers\Joke();
     }
 }

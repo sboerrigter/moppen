@@ -8,7 +8,7 @@
 
 	{{ post.content }}
 
-	<p><strong>{{ post.mark }}</strong> op basis van {{ post.totalvotes }} stemmen</strong>
+	<p><strong>{{ post.rating.grade }}</strong> op basis van {{ post.rating.totalvotes }} stemmen</strong>
 
 	{% include 'partials/rating-bar.twig' %}
 
