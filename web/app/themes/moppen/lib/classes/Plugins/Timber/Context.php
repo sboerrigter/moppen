@@ -12,6 +12,8 @@ final class Context
 
     public function add($context)
     {
+        $context['joke'] = new \Sboerrigter\Moppen\Helpers\Joke();
+
         $context['menus'] = array(
             'main'   => new Menu('main'),
             'footer' => new Menu('footer'),
