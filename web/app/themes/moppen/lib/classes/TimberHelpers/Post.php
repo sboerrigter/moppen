@@ -1,7 +1,7 @@
 <?php
-namespace Sboerrigter\Moppen\Helpers;
+namespace Sboerrigter\Moppen\TimberHelpers;
 
-final class Joke
+final class Post extends \TimberPost
 {
     public function downvotes()
     {
