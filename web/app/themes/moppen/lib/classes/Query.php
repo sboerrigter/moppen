@@ -16,19 +16,15 @@ final class Query
              !$query->is_admin()
         ) {
             $query->set('meta_query', array(
-        		'relation'    => 'AND',
-        		'_rating' => array(
-        			'key'     => '_rating',
-        		),
-        		'_upvotes'    => array(
-        			'key'     => '_upvotes',
-        		)
-        	));
+                'relation' => 'AND',
+                '_rating'  => array('key' => '_rating'),
+                '_upvotes' => array('key'  => '_upvotes'),
+            ));
             $query->set('order', 'DESC');
             $query->set('orderby', array(
-    			'_rating'  => 'DESC',
-    			'_upvotes' => 'DESC',
-    		));
+                '_rating'  => 'DESC',
+                '_upvotes' => 'DESC',
+            ));
             $query->set('posts_per_page', 25);
 
         }

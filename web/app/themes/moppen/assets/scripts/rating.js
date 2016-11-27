@@ -1,13 +1,15 @@
 jQuery(($) => {
-  let upvotes = parseInt($('.rating').data('upvotes'), 10);
-  let downvotes = parseInt($('.rating').data('downvotes'), 10);
-  let rating = parseFloat($('.rating').data('rating'), 10);
+  let upvotes = parseInt($('.rating-bar').data('upvotes'), 10);
+  let downvotes = parseInt($('.rating-bar').data('downvotes'), 10);
+  let rating = parseFloat($('.rating-bar').data('rating'), 10);
 
   function updateRating() {
     /**
-     * Calculate rating
+     * Calculate stuff
      */
-    rating = upvotes / (upvotes + downvotes);
+    const totalvotes = upvotes + downvotes;
+    rating = upvotes / totalvotes;
+    const grade = Math.round(rating * 100) / 10;
 
     /**
     * Update Post Meta
@@ -27,7 +29,9 @@ jQuery(($) => {
      * Update rating view
      */
     const width = rating * 100;
-    $('.rating .bar').css('width', width + '%');
+    $('.rating-bar .bar').css('width', width + '%');
+    $('.grade').html(grade);
+    $('.totalvotes').html(totalvotes);
 
     /**
      * Set cookie

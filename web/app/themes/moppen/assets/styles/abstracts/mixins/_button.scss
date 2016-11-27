@@ -17,11 +17,10 @@
   white-space: normal; // Fix for wide button inputs that won't flow to the next line
 
   &.secondary {
-    background-color: $secondary-color;
-
     @include hover((
       'background-color': shade($secondary-color, 10%),
       'color': $white,
     ));
+    background-color: $secondary-color;
   }
 }
