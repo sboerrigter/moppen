@@ -16,7 +16,7 @@ final class Joke
     public function upvotes()
     {
         $upvotes = get_post_meta(get_the_ID(), '_upvotes', true);
-        if (empty($upvotes)){
+        if (empty($upvotes)) {
             $upvotes = 0;
         }
 
