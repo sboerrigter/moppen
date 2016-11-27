@@ -7,6 +7,7 @@ final class Rating
     {
         add_action('wp_enqueue_scripts', [$this, 'addAjaxObject']);
         add_action('wp_ajax_update_rating', [$this, 'update']);
+        add_action('wp_ajax_nopriv_update_rating', [$this, 'update']);
     }
 
     public function addAjaxObject()
@@ -22,6 +23,7 @@ final class Rating
         update_post_meta($_REQUEST['post_id'], '_upvotes', $_REQUEST['upvotes']);
         update_post_meta($_REQUEST['post_id'], '_downvotes', $_REQUEST['downvotes']);
         update_post_meta($_REQUEST['post_id'], '_rating', $_REQUEST['rating']);
+
         wp_die();
     }
 }
