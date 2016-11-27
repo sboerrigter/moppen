@@ -1,5 +1,9 @@
-<li class="{{ post.class }}">
-	<a href="{{ post.link }}">
-		{{ post.title }}
-	</a>
-</li>
+<article class="{{ post.class }}">
+	<strong>
+		<a href="{{ post.link }}">
+			{{ post.title }}
+		</a>
+	</strong>
+	
+	{% include 'partials/rating-bar.twig' %}
+</article>

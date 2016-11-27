@@ -8,14 +8,9 @@
 
 	{{ post.content }}
 
-	<div
-		class="rating"
-		data-upvotes="{{ upvotes }}"
-		data-downvotes="{{ downvotes }}"
-		data-rating="{{ rating }}"
-	>
-		<div class="bar" style="width: {{ width }}%"></div>
-	</div>
+	<p><strong>{{ joke.mark }}</strong> op basis van {{ joke.totalvotes }} stemmen</strong>
+
+	{% include 'partials/rating-bar.twig' %}
 
 	<a class="button downvote">:-|</a>
 	<a class="button upvote">:-D</a>
