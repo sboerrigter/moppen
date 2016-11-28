@@ -15,10 +15,10 @@ jQuery(($) => {
     * Update Post Meta
     */
     $.ajax({
-      url: ajax_object.ajax_url,
+      url: window.ajax_object.ajax_url,
       data: {
         action: 'update_rating',
-        post_id: ajax_object.post_id,
+        post_id: window.ajax_object.post_id,
         upvotes,
         downvotes,
         rating,
@@ -32,26 +32,14 @@ jQuery(($) => {
     $('.rating-bar .bar').css('width', width + '%');
     $('.grade').html(grade);
     $('.totalvotes').html(totalvotes);
-
-    /**
-     * Set cookie
-     */
-
-    /**
-     * Disable rating buttons
-     */
-
-    /**
-     * Disable rating buttons
-     */
   }
 
-  $('.downvote').click(function downvote() {
+  $('.downvote').click(() => {
     downvotes++;
     updateRating();
   });
 
-  $('.upvote').click(function upvote() {
+  $('.upvote').click(() => {
     upvotes++;
     updateRating();
   });
