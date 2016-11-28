@@ -14,4 +14,4 @@ $context['pagination'] = Timber::get_pagination(array(
     'mid_size' => 2,
 ));
 
-Timber::render('index.twig', $context);
+Timber::render('archive-jokes.twig', $context);
