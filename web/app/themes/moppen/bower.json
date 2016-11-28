@@ -6,6 +6,7 @@
     "normalize.css": "~3.0.3",
     "toggle-navigation": "trendwerk/toggle-navigation#~0.1.0",
     "grid": "trendwerk/grid#^0.0.3",
-    "gravity-forms-styling": "trendwerk/gravity-forms-styling#^0.2.0"
+    "gravity-forms-styling": "trendwerk/gravity-forms-styling#^0.2.0",
+    "cookiesjs": "franciscop/cookies.js#^1.4.0"
   }
 }

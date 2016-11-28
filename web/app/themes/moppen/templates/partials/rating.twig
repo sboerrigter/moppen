@@ -1,0 +1,15 @@
+<div class="rating disabled">
+    <div class="downvote">
+        <a class="button"></a>
+    </div>
+
+    <div class="results">
+        <p class="grade-votes"><span class="grade">{{ post.rating.grade }}</span> op basis van <span class="votes">{{ post.rating.totalvotes }}</span> stemmen</strong>
+
+        {% include 'partials/rating-bar.twig' %}
+    </div>
+
+    <div class="upvote">
+        <a class="button selected"></a>
+    </div>
+</div>

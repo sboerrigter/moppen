@@ -1,7 +1,6 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-
 	<h1>
 		{{ title }}
 	</h1>
@@ -9,23 +8,16 @@
 	{{ description }}
 
 	{% if posts is not empty %}
-
-		<ul>
-
+		<div class="jokes-list">
 			{% for post in posts %}
-				{% include 'partials/loop-post.twig' %}
+				{% include 'partials/loop-joke.twig' %}
 			{% endfor %}
-
-		</ul>
+		</div>
 
 		{% include 'partials/pagination.twig' %}
-
 	{% else %}
-
 		<p>
 			{{ __('No results found.', 'tp') }}
 		</p>
-
 	{% endif %}
-
 {% endblock %}

@@ -1,0 +1,14 @@
+<article class="{{ post.class }}">
+
+	<div class="title">
+		<a href="{{ post.link }}">
+			{{ post.title }}
+		</a>
+
+		<div class="grade">
+			{{ post.rating.grade }}
+		</div>
+	</div>
+
+	{% include 'partials/rating-bar.twig' %}
+</article>

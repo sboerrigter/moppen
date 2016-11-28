@@ -1,0 +1,29 @@
+.jokes {
+  @include full-width();
+  margin-bottom: 5px;
+
+  .title {
+    float: left;
+    width: 75%;
+
+    a {
+      color: $dark-grey;
+    }
+
+    a:hover {
+      color: $extra-dark-grey;
+    }
+  }
+
+  .grade {
+    float: right;
+    font-weight: bold;
+    margin-right: 20px;
+  }
+
+  .rating-bar {
+    float: right;
+    margin-top: 12px;
+    width: 25%;
+  }
+}

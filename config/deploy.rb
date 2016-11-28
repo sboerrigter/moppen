@@ -1,5 +1,5 @@
 set :application, 'moppen'
-set :repo_url, 'git@bitbucket.com:sboerrigter/moppen.git'
+set :repo_url, 'git@github.com:sboerrigter/moppen-site.git'
 
 # Branch
 set :branch, :master

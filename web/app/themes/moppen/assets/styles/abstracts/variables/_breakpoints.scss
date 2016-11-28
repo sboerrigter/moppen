@@ -3,7 +3,7 @@
 $breakpoints: (
   'small': 420px,
   'medium': 640px,
-  'toggle-navigation': 900px,
+  'toggle-navigation': 980px,
   'large': 980px,
   'huge': map-get($wrapper, 'width'),
 );

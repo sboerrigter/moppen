@@ -1,20 +1,21 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-
 	<h1>
 		{{ post.title }}
 	</h1>
 
 	{{ post.content }}
 
+	{% include 'partials/rating.twig' %}
+
 	<p>
 		<a class="button secondary" href="{{ archivelink }}">
-			&blacktriangleleft; {{ __('Jokes overview', 'tp') }}
+			&blacktriangleleft; Overzicht
 		</a>
 
-		<a class="button" href="{{ nextpostlink }}">
-			{{ __('Next joke', 'tp') }} &blacktriangleright;
+		<a class="button align-right" href="{{ nextpostlink }}">
+			Nieuwe mop &blacktriangleright;
 		</a>
 	</p>
 
