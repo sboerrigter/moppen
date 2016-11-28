@@ -1,10 +1,18 @@
 .jokes {
   @include full-width();
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 
   .title {
     float: left;
     width: 75%;
+
+    a {
+      color: $dark-grey;
+    }
+
+    a:hover {
+      color: $extra-dark-grey;
+    }
   }
 
   .grade {

@@ -7,11 +7,11 @@ $dark-blue:         #0d3380;
 $light-blue:        #e6eff2;
 
 $black:             black;
-$extra-dark-grey:   rgb(51, 51, 51);
-$dark-grey:         rgb(102, 102, 102);
-$medium-grey:       rgb(153, 153, 153);
-$light-grey:        rgb(204, 204, 204);
-$extra-light-grey:  rgb(238, 238, 238);
+$extra-dark-grey:   #262f33;
+$dark-grey:         #516166;
+$medium-grey:       #829399;
+$light-grey:        #b8c7cc;
+$extra-light-grey:  #e7f0f3;
 $white:             white;
 
 /**
@@ -24,7 +24,7 @@ $heading-color:     $dark-blue;
 $text-color:        $dark-grey;
 $text-light:        $medium-grey;
 
-$link-color:        $extra-dark-grey;
+$link-color:        $blue;
 $hover-color:       $dark-grey;
 
 $light-background:  $light-blue;
