@@ -1,4 +1,4 @@
 .jokes-list {
   @include full-width();
-  @include responsive-margin-bottom();
+  @include responsive-margin-bottom(60px);
 }

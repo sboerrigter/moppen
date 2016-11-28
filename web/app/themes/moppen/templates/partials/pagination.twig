@@ -3,7 +3,7 @@
     <nav class="pager">
       {% if pagination.prev %}
         <a class="prev" href="{{ pagination.prev.link }}">
-          {{- __('Previous', 'tp') -}}
+          &blacktriangleleft; {{ __('Previous', 'tp') }}
         </a>
       {% endif %}
 
@@ -21,7 +21,7 @@
 
       {% if pagination.next %}
         <a class="next" href="{{ pagination.next.link }}">
-          {{- __('Next', 'tp') -}}
+          {{ __('Next', 'tp') }} &blacktriangleright;
         </a>
       {% endif %}
     </nav>
