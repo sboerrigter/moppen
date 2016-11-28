@@ -7,9 +7,12 @@ jQuery(($) => {
 
   const postId = window.ajax_object.post_id;
   let votedPosts = cookies('voted');
+  if ($.isEmptyObject(votedPosts)) {
+    votedPosts = [];
+  }
   let voteEnabled = false;
 
-  if($.inArray(postId, votedPosts)  == -1) {
+  if ($.inArray(postId, votedPosts) === -1) {
     $('.rating').removeClass('disabled');
     voteEnabled = true;
   }
