@@ -1,4 +1,4 @@
-import '../../bower_components/js-cookie/src/js.cookie';
+import cookies from '../../bower_components/cookiesjs/cookies';
 
 jQuery(($) => {
   let upvotes = parseInt($('.rating-bar').data('upvotes'), 10);
@@ -6,8 +6,13 @@ jQuery(($) => {
   let rating = parseFloat($('.rating-bar').data('rating'), 10);
 
   const postId = window.ajax_object.post_id;
-  const voted = [];
-  let votedisabled = false;
+  let votedPosts = cookies('voted');
+  let voteEnabled = false;
+
+  if($.inArray(postId, votedPosts)  == -1) {
+    $('.rating').removeClass('disabled');
+    voteEnabled = true;
+  }
 
   function updateRating() {
     /**
@@ -35,7 +40,7 @@ jQuery(($) => {
      * Update rating view
      */
     const width = rating * 100;
-    $('.rating').addClass('voted');
+    $('.rating').addClass('disabled');
     $('.rating .bar').css('width', width + '%');
     $('.rating .grade').html(grade.toFixed(1));
     $('.rating .votes').html(totalvotes);
@@ -43,24 +48,24 @@ jQuery(($) => {
     /**
      * Set cookie
      */
-    voted.push(postId);
-    Cookies.set('voted', voted);
+    votedPosts.push(postId);
+    cookies({ voted: votedPosts });
 
     /**
      * Disable voting
      */
-    votedisabled = true;
+    voteEnabled = false;
   }
 
   $('.downvote .button').click(() => {
-    if (!votedisabled) {
+    if (voteEnabled) {
       downvotes++;
       updateRating();
     }
   });
 
   $('.upvote .button').click(() => {
-    if (!votedisabled) {
+    if (voteEnabled) {
       upvotes++;
       updateRating();
     }

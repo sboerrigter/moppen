@@ -69,7 +69,7 @@
     }
   }
 
-  &.voted {
+  &.disabled {
     .upvote .button,
     .downvote .button {
       background-color: tint($light-background, 50%);
