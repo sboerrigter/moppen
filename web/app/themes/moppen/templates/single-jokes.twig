@@ -1,21 +1,13 @@
 {% extends 'base.twig' %}
 
 {% block content %}
-
 	<h1>
 		{{ post.title }}
 	</h1>
 
 	{{ post.content }}
 
-	<p><span class="grade">{{ post.rating.grade }}</span> op basis van <span class="totalvotes">{{ post.rating.totalvotes }}</span> stemmen</strong>
-
-	{% include 'partials/rating-bar.twig' %}
-
-	<a class="button downvote">:-|</a>
-	<a class="button upvote">:-D</a>
-
-	<br><br><br>
+	{% include 'partials/rating.twig' %}
 
 	<p>
 		<a class="button secondary" href="{{ archivelink }}">

@@ -1,0 +1,14 @@
+.rating-bar {
+  background: $light-background;
+  border-radius: 10px;
+  height: 10px;
+  overflow: hidden;
+  width: 100%;
+
+  .bar {
+    background: $primary-color;
+    height: 10px;
+    transition: all 0.2s ease-out;
+    width: 0%;
+  }
+}

@@ -1,14 +1,87 @@
-.rating-bar {
-  background: $light-background;
-  border-radius: 10px;
-  height: 10px;
-  overflow: hidden;
-  width: 100%;
+.rating {
+  @include full-width();
+  margin: 10px 0 60px;
 
-  .bar {
-    background: $primary-color;
-    height: 10px;
-    transition: all 0.2s ease-out;
-    width: 0%;
+  .results {
+    float: left;
+    width: 50%;
+
+    @include respond-to('medium') {
+      width: 70%;
+    }
+
+    @include respond-to('large') {
+      width: 80%;
+    }
+
+    .grade-votes {
+      font-size: map-get($font-sizes, 'text-small');
+      line-height: map-get($line-height, 'small');
+      margin: 5px 0 10px;
+    }
+
+    .grade {
+      font-weight: bold;
+    }
+  }
+
+  .downvote,
+  .upvote {
+    float: left;
+    width: 25%;
+
+    @include respond-to('medium') {
+      width: 15%;
+    }
+
+    @include respond-to('large') {
+      width: 10%;
+    }
+
+    .button {
+      background-color: $light-background;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      height: 60px;
+      margin: 0;
+      padding: 0;
+      width: 60px;
+    }
+  }
+
+  .downvote .button {
+    @include sprite(0, -40px);
+
+    &:hover {
+      @include sprite(-60px, -40px);
+      background-color: $secondary-color;
+    }
+  }
+
+  .upvote .button {
+    @include sprite(0, -100px);
+    float: right;
+
+    &:hover {
+      @include sprite(-60px, -100px);
+      background-color: $primary-color;
+    }
+  }
+
+  &.voted {
+    .upvote .button,
+    .downvote .button {
+      background-color: tint($light-background, 50%);
+      cursor: default;
+    }
+
+    .downvote .button {
+      @include sprite(-120px, -40px);
+    }
+
+    .upvote .button {
+      @include sprite(-120px, -100px);
+    }
   }
 }

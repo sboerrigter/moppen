@@ -29,17 +29,18 @@ jQuery(($) => {
      * Update rating view
      */
     const width = rating * 100;
-    $('.rating-bar .bar').css('width', width + '%');
-    $('.grade').html(grade);
-    $('.totalvotes').html(totalvotes);
+    $('.rating').addClass('voted');
+    $('.rating .bar').css('width', width + '%');
+    $('.rating .grade').html(grade);
+    $('.rating .votes').html(totalvotes);
   }
 
-  $('.downvote').click(() => {
+  $('.downvote .button').click(() => {
     downvotes++;
     updateRating();
   });
 
-  $('.upvote').click(() => {
+  $('.upvote .button').click(() => {
     upvotes++;
     updateRating();
   });
