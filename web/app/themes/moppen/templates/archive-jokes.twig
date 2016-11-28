@@ -8,9 +8,11 @@
 	{{ description }}
 
 	{% if posts is not empty %}
-		{% for post in posts %}
-			{% include 'partials/loop-post.twig' %}
-		{% endfor %}
+		<div class="jokes-list">
+			{% for post in posts %}
+				{% include 'partials/loop-joke.twig' %}
+			{% endfor %}
+		</div>
 
 		{% include 'partials/pagination.twig' %}
 	{% else %}

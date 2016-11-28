@@ -37,7 +37,7 @@ final class Joke extends \TimberPost
             'upvotes' => intval($upvotes),
             'totalvotes' => intval($totalvotes),
             'value' => floatval($value),
-            'grade' => floatval($grade),
+            'grade' => number_format($grade, 1),
             'barwidth' => $barwidth . '%',
         );
 
