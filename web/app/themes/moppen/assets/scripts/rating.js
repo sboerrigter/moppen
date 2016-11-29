@@ -5,16 +5,12 @@ jQuery(($) => {
   let downvotes = parseInt($('.rating-bar').data('downvotes'), 10);
   let rating = parseFloat($('.rating-bar').data('rating'), 10);
 
-  const postId = window.ajax_object.post_id;
-  let votedPosts = cookies('voted');
-  if ($.isEmptyObject(votedPosts)) {
-    votedPosts = [];
-  }
+  const voted = cookies('voted');
   let voteEnabled = false;
 
-  if ($.inArray(postId, votedPosts) === -1) {
-    $('.rating').removeClass('disabled');
+  if (!voted) {
     voteEnabled = true;
+    $('.rating').removeClass('disabled');
   }
 
   function updateRating() {
@@ -32,7 +28,7 @@ jQuery(($) => {
       url: window.ajax_object.ajax_url,
       data: {
         action: 'update_rating',
-        post_id: postId,
+        post_id: window.ajax_object.post_id,
         upvotes,
         downvotes,
         rating,
@@ -51,8 +47,7 @@ jQuery(($) => {
     /**
      * Set cookie
      */
-    votedPosts.push(postId);
-    cookies({ voted: votedPosts });
+    cookies({ voted: 1 }, { path: '' });
 
     /**
      * Disable voting
