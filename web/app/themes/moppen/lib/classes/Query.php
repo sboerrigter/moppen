@@ -10,10 +10,9 @@ final class Query
 
     public function adjust($query)
     {
-        if (($query->is_post_type_archive('jokes') ||
-             $query->is_tax('category')) &&
-             $query->is_main_query() &&
-             !$query->is_admin()
+        if (!is_admin() &&
+            $query->is_main_query() &&
+            ($query->is_post_type_archive('jokes') || $query->is_tax('category'))
         ) {
             $query->set('meta_query', array(
                 'relation' => 'AND',
