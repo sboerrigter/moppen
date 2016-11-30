@@ -1,0 +1,17 @@
+.single-jokes {
+  .button {
+    padding: 0.75em 1em;
+
+    @media(min-width: 360px) {
+      padding: 0.75em 1.5em;
+    }
+  }
+
+  .results .grade-votes {
+    margin: 0 0 7px;
+
+    @media(min-width: 360px) {
+      margin: 5px 0 10px;
+    }
+  }
+}
