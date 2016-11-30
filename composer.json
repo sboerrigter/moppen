@@ -65,6 +65,7 @@
 		"johnpbloch/wordpress": "*",
 		"koodimonni-language/core-nl_nl": "*",
 		"trendwerk/post-type-menu-highlight": "*",
+		"trendwerk/smtp": "*",
 		"wpackagist-plugin/akismet": "*",
 		"wpackagist-plugin/autodescription": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",

@@ -37,6 +37,7 @@ textarea {
 [type="submit"],
 button {
   @include button();
+  background: $secondary-color;
 }
 
 select {

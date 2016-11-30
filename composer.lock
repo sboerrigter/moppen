@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3f399ab16da4d762150550571c3b3756",
-    "content-hash": "bed7803ea87e95c35aecccada51cb029",
+    "hash": "f2ccf64cae000394989204fd480359e5",
+    "content-hash": "5f523f515b2d83fe9612af4ac58d5f30",
     "packages": [
         {
             "name": "composer/installers",
@@ -322,6 +322,38 @@
             ],
             "description": "Fixes classes in main menu. Made for WordPress.",
             "time": "2016-08-02 14:11:10"
+        },
+        {
+            "name": "trendwerk/smtp",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trendwerk/smtp.git",
+                "reference": "c5d77bf05d9010de7adef39b8d2fe9a3d4136286"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trendwerk/smtp/zipball/c5d77bf05d9010de7adef39b8d2fe9a3d4136286",
+                "reference": "c5d77bf05d9010de7adef39b8d2fe9a3d4136286",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Harold Angenent",
+                    "email": "harold@trendwerk.nl"
+                }
+            ],
+            "description": "Send mail through SMTP. Made for WordPress.",
+            "time": "2016-08-05 14:52:45"
         },
         {
             "name": "vlucas/phpdotenv",
