@@ -62,6 +62,19 @@ define( 'NONCE_SALT', getenv('NONCE_SALT') );
 define( 'DISALLOW_FILE_MODS', true );
 
 /**
+ * SMTP settings
+ */
+define( 'TP_SMTP', true );
+define( 'TP_SMTP_FROM', getenv('TP_SMTP_FROM') );
+define( 'TP_SMTP_FROM_NAME', getenv('TP_SMTP_FROM_NAME') );
+define( 'TP_SMTP_HOST', getenv('TP_SMTP_HOST') );
+define( 'TP_SMTP_SECURE', getenv('TP_SMTP_SECURE') );
+define( 'TP_SMTP_PORT', getenv('TP_SMTP_PORT') );
+define( 'TP_SMTP_AUTH', getenv('TP_SMTP_AUTH') );
+define( 'TP_SMTP_USERNAME', getenv('TP_SMTP_USERNAME') );
+define( 'TP_SMTP_PASSWORD', getenv('TP_SMTP_PASSWORD') );
+
+/**
  * Load WordPress
  */
 if( ! defined( 'ABSPATH' ) )
