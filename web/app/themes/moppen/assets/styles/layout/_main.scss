@@ -1,7 +1,7 @@
 main {
   @include full-width();
   @include responsive-margin-bottom();
-  @include responsive-property('margin-top', 80px);
+  @include responsive-property('margin-top', 60px);
 
   .wrapper {
     max-width: $content-width;

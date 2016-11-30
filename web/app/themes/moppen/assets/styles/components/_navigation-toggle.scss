@@ -1,6 +1,6 @@
 .navigation-toggle {
-  $height: 19px;
-  $width: 24px;
+  $height: 30px;
+  $width: 30px;
 
   cursor: pointer;
   float: right;
@@ -16,6 +16,7 @@
 
   .line {
     background-color: $white;
+    border-radius: 3px;
     height: 3px;
     position: absolute;
     transition: transform 0.4s cubic-bezier(0, 0, 0, 1);
@@ -27,26 +28,26 @@
   }
 
   .line:nth-child(2) {
-    top: 8px;
+    top: 10px;
   }
 
   .line:nth-child(3) {
-    top: 16px;
+    top: 20px;
   }
 
   .navigation-open & {
-    transform: rotate(-90deg);
+    transform: rotateY(180deg);
 
     .line:nth-child(1) {
-      transform: rotate(-45deg) translate(-5.3px, 5.3px);
+      transform: rotate(45deg) translate(7px, 7px);
     }
 
     .line:nth-child(2) {
-      transform: scale(0, 1);
+      transform: scale(0, 1) translate(150px, 0);
     }
 
     .line:nth-child(3) {
-      transform: rotate(45deg) translate(-6px, -6px);
+      transform: rotate(-45deg) translate(7px, -7px);
     }
   }
 }
