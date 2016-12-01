@@ -16,7 +16,7 @@ input:not([type="button"]):not([type="checkbox"]):not([type="file"]):not([type="
 select,
 textarea {
   appearance: none; // Remove built-in browser/device styling
-  background: $white;
+  background: $light-background;
   border: 0;
   border-radius: 3px;
   display: block;
@@ -50,6 +50,7 @@ select {
 
   &:not([multiple]) {
     background: url('data:image/png;base64,R0lGODlhDQAEAIAAAAAAAP8A/yH5BAEHAAEALAAAAAANAAQAAAILhA+hG5jMDpxvhgIAOw==') no-repeat right 10px center;
+    background-color: $light-background;
   }
 
   option {

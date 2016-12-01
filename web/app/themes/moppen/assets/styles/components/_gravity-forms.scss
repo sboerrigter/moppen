@@ -1,1 +1,9 @@
 @include gravity-forms-styling();
+
+// scss-lint:disable SelectorFormat
+
+.gform_wrapper {
+  @include responsive-margin-bottom(80px);
+}
+
+// scss-lint:enable SelectorFormat
