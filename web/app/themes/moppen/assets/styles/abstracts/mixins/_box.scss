@@ -1,0 +1,9 @@
+@mixin box() {
+  background: $light-background;
+  border-radius: 5px;
+  padding: 20px;
+
+  @include respond-to('medium') {
+    padding: 30px;
+  }
+}

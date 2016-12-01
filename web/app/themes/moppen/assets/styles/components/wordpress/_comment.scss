@@ -1,7 +1,7 @@
 .comment {
   $element-margin: 20px;
 
-  @include responsive-margin-bottom(40px);
+  @include responsive-margin-bottom();
   background: $light-background;
   padding: $box-padding;
 

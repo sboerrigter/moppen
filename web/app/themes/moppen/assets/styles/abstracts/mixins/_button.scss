@@ -15,17 +15,4 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: normal; // Fix for wide button inputs that won't flow to the next line
-
-  &.secondary {
-    @include hover((
-      'background-color': shade($secondary-color, 10%),
-      'color': $white,
-    ));
-    background-color: $secondary-color;
-  }
-
-  &.align-right {
-    float: right;
-    margin-right: 0;
-  }
 }

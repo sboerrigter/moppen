@@ -17,19 +17,15 @@ select,
 textarea {
   appearance: none; // Remove built-in browser/device styling
   background: $white;
-  border: 1px solid $border-color;
-  border-radius: 0;
+  border: 0;
+  border-radius: 3px;
   display: block;
   font-size: 16px; // Disable iOS zoom on focus
   height: 3em;
   padding: 0 15px;
 
   @include respond-to('medium') {
-    font-size: 14px;
-  }
-
-  &:focus {
-    border: 1px solid shade($border-color, 20%);
+    font-size: 18px;
   }
 }
 
@@ -37,7 +33,11 @@ textarea {
 [type="submit"],
 button {
   @include button();
-  background: $secondary-color;
+  @include hover((
+    'background-color': shade($secondary-color, 10%),
+    'color': $white,
+  ));
+  background-color: $secondary-color;
 }
 
 select {

@@ -1,0 +1,71 @@
+.follow-us {
+
+  h3 {
+    margin: 0 0 0.25em;
+    text-align: center;
+  }
+
+  p {
+    margin: 0 0  1.5em;
+    text-align: center;
+  }
+
+  .buttons {
+    @include box();
+    @include clear();
+  }
+
+  .button {
+    text-align: center;
+    width: 100%;
+
+    &.facebook {
+      @include hover((
+        'background-color': shade($tertiary-color, 20%),
+        'color': $white,
+      ));
+      @include sprite(-215px, 5px);
+      background-color: $tertiary-color;
+      padding-left: 30px;
+
+      @media(min-width: 720px) {
+        @include sprite(-210px, 7px);
+        float: left;
+        margin: 0 2% 20px 0;
+        width: 48%;
+      }
+    }
+
+    &.twitter {
+      @include sprite(-215px, -35px);
+      padding-left: 30px;
+
+      @media(min-width: 720px) {
+        @include sprite(-210px, -33px);
+        float: right;
+        margin: 0 0 20px 2%;
+        width: 48%;
+      }
+    }
+  }
+
+  input:not([type=button]):not([type=checkbox]):not([type=file]):not([type=radio]):not([type=submit]),
+  [type='submit'] {
+    margin: 10px 0 0;
+    width: 100%;
+
+    @media(min-width: 720px) {
+      border-radius: 3px 0 0 3px;
+      float: left;
+      width: 70%;
+    }
+  }
+
+  [type='submit'] {
+    @media(min-width: 720px) {
+      border-radius: 0 3px 3px 0;
+      width: 30%;
+    }
+  }
+
+}

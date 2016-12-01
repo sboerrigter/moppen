@@ -18,7 +18,7 @@
     'item': '.gallery-item',
     'margin': $margin,
   ));
-  @include responsive-margin-bottom(40px);
+  @include responsive-margin-bottom();
   margin-top: 20px;
 
   .gallery-item {
