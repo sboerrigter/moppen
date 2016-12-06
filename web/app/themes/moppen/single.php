@@ -11,4 +11,4 @@ $randomjoke = get_posts(array(
 ));
 $context['nextpostlink'] = get_permalink($randomjoke[0]->ID);
 
-Timber::render('single-jokes.twig', $context);
+Timber::render('single.twig', $context);

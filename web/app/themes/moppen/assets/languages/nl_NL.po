@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: TrendPress\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-11-25 23:38+0100\n"
-"PO-Revision-Date: 2016-11-25 23:38+0100\n"
+"PO-Revision-Date: 2016-12-06 22:36+0100\n"
 "Last-Translator: Sjoerd Boerrigter <sjoerd@trendwerk.nl>\n"
 "Language-Team: Ontwerpstudio Trendwerk <info@trendwerk.nl>\n"
 "Language: nl_NL\n"
@@ -59,7 +59,7 @@ msgstr "Categorie"
 
 #: ../../lib/classes/PostTypes.php:54
 msgid "category"
-msgstr "in de categorie:"
+msgstr "categorie"
 
 #: ../../templates/404.twig:5
 msgid "Page doesn't exist"

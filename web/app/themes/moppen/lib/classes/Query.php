@@ -19,7 +19,6 @@ final class Query
                 '_rating'  => array('key' => '_rating'),
                 '_upvotes' => array('key'  => '_upvotes'),
             ));
-            $query->set('order', 'DESC');
             $query->set('orderby', array(
                 '_rating'  => 'DESC',
                 '_upvotes' => 'DESC',
