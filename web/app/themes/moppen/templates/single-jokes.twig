@@ -7,8 +7,8 @@
 
 	{{ post.content }}
 
-	{% if post.get_field('_contributor') %}
-	    <p class="contributor">Ingestuurd door {{ post.get_field('_contributor') }}</p>
+	{% if post.get_field('joke-author') %}
+	    <p class="joke-author">Ingestuurd door {{ post.get_field('joke-author') }}</p>
 	{% endif %}
 
 	{% include 'partials/rating.twig' %}
