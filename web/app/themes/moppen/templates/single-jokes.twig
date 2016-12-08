@@ -7,6 +7,10 @@
 
 	{{ post.content }}
 
+	{% if post.get_field('_contributor') %}
+	    <p class="contributor">Ingestuurd door {{ post.get_field('_contributor') }}</p>
+	{% endif %}
+
 	{% include 'partials/rating.twig' %}
 
 	<p>
