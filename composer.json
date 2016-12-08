@@ -67,10 +67,10 @@
 		"trendwerk/post-type-menu-highlight": "*",
 		"trendwerk/smtp": "*",
 		"wpackagist-plugin/akismet": "*",
-		"wpackagist-plugin/autodescription": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
 		"wpackagist-plugin/limit-login-attempts": "*",
 		"wpackagist-plugin/timber-library": "*",
+		"wpackagist-plugin/wordpress-seo": "*",
 		"wp-premium/gravityforms": "2.1.1"
 
 	},
