@@ -66,6 +66,7 @@
 		"koodimonni-language/core-nl_nl": "*",
 		"trendwerk/post-type-menu-highlight": "*",
 		"trendwerk/smtp": "*",
+		"wpackagist-plugin/advanced-custom-fields": "*",
 		"wpackagist-plugin/akismet": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
 		"wpackagist-plugin/limit-login-attempts": "*",
