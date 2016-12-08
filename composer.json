@@ -40,6 +40,18 @@
 			"url": "https://languages.koodimonni.fi"
 		},
 		{
+			"type": "package",
+			"package": {
+				"name": "advanced-custom-fields/advanced-custom-fields-pro",
+				"version": "5.5.1",
+				"type": "wordpress-plugin",
+				"dist": {
+					"type": "zip",
+					"url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NjI0MDV8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTUtMDgtMjEgMTI6MzI6Mjg="
+				}
+			}
+		},
+		{
             "type": "package",
             "package": {
                 "name": "wp-premium/gravityforms",
@@ -64,9 +76,10 @@
 	    "vlucas/phpdotenv": "~2.0",
 		"johnpbloch/wordpress": "*",
 		"koodimonni-language/core-nl_nl": "*",
+		"advanced-custom-fields/advanced-custom-fields-pro": "*",
+		"trendwerk/acf-theme-config": "*",
 		"trendwerk/post-type-menu-highlight": "*",
 		"trendwerk/smtp": "*",
-		"wpackagist-plugin/advanced-custom-fields": "*",
 		"wpackagist-plugin/akismet": "*",
 		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
 		"wpackagist-plugin/limit-login-attempts": "*",

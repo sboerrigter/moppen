@@ -4,9 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3f437008d4378af0bc943dca551021c8",
-    "content-hash": "fbb3b6a62bf37cbf7d27f1aa3bb27671",
+    "hash": "d1c778be75dc2df79ec7252ea92d7a5a",
+    "content-hash": "908033781b55e90c4ec5b0ff41618a8a",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.5.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NjI0MDV8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTUtMDgtMjEgMTI6MzI6Mjg=",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.19",
@@ -292,6 +303,39 @@
             "time": "2016-05-08 17:14:32"
         },
         {
+            "name": "trendwerk/acf-theme-config",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trendwerk/acf-theme-config.git",
+                "reference": "d223eb0d583adfa3829fa4c09ad623c7c7987eda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trendwerk/acf-theme-config/zipball/d223eb0d583adfa3829fa4c09ad623c7c7987eda",
+                "reference": "d223eb0d583adfa3829fa4c09ad623c7c7987eda",
+                "shasum": ""
+            },
+            "require": {
+                "advanced-custom-fields/advanced-custom-fields-pro": "~5.3",
+                "composer/installers": "~1",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Harold Angenent",
+                    "email": "harold@trendwerk.nl"
+                }
+            ],
+            "description": "Configure ACF for a theme. Made for WordPress.",
+            "time": "2016-08-05 14:55:21"
+        },
+        {
             "name": "trendwerk/post-type-menu-highlight",
             "version": "1.1.6",
             "source": {
@@ -414,26 +458,6 @@
                 "reference": "2.0.3"
             },
             "type": "wordpress-plugin"
-        },
-        {
-            "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "4.4.11",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "tags/4.4.11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.11.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
             "name": "wpackagist-plugin/akismet",
