@@ -4,9 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f2ccf64cae000394989204fd480359e5",
-    "content-hash": "5f523f515b2d83fe9612af4ac58d5f30",
+    "hash": "d1c778be75dc2df79ec7252ea92d7a5a",
+    "content-hash": "908033781b55e90c4ec5b0ff41618a8a",
     "packages": [
+        {
+            "name": "advanced-custom-fields/advanced-custom-fields-pro",
+            "version": "5.5.1",
+            "dist": {
+                "type": "zip",
+                "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NjI0MDV8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTUtMDgtMjEgMTI6MzI6Mjg=",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.19",
@@ -102,16 +113,16 @@
         },
         {
             "name": "johnpbloch/wordpress",
-            "version": "4.6.1",
+            "version": "4.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress.git",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3"
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
-                "reference": "aca8da84b4a699b16b8bcc96d2bc794a4c7b5ae3",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/b327faa6feea3a4058178dee7ac8b512bd957e92",
+                "reference": "b327faa6feea3a4058178dee7ac8b512bd957e92",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +146,7 @@
                 "blog",
                 "cms"
             ],
-            "time": "2016-09-07 15:01:47"
+            "time": "2016-12-06 18:46:46"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -292,6 +303,39 @@
             "time": "2016-05-08 17:14:32"
         },
         {
+            "name": "trendwerk/acf-theme-config",
+            "version": "0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/trendwerk/acf-theme-config.git",
+                "reference": "d223eb0d583adfa3829fa4c09ad623c7c7987eda"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/trendwerk/acf-theme-config/zipball/d223eb0d583adfa3829fa4c09ad623c7c7987eda",
+                "reference": "d223eb0d583adfa3829fa4c09ad623c7c7987eda",
+                "shasum": ""
+            },
+            "require": {
+                "advanced-custom-fields/advanced-custom-fields-pro": "~5.3",
+                "composer/installers": "~1",
+                "php": ">=5.4"
+            },
+            "type": "wordpress-muplugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Harold Angenent",
+                    "email": "harold@trendwerk.nl"
+                }
+            ],
+            "description": "Configure ACF for a theme. Made for WordPress.",
+            "time": "2016-08-05 14:55:21"
+        },
+        {
             "name": "trendwerk/post-type-menu-highlight",
             "version": "1.1.6",
             "source": {
@@ -436,26 +480,6 @@
             "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
-            "name": "wpackagist-plugin/autodescription",
-            "version": "2.7.0",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/autodescription/"
-        },
-        {
             "name": "wpackagist-plugin/gravity-forms-custom-post-types",
             "version": "3.1.7",
             "source": {
@@ -497,15 +521,15 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.1.10",
+            "version": "1.1.11",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.1.10"
+                "reference": "tags/1.1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.1.10.zip",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.1.11.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -514,6 +538,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/timber-library/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-seo",
+            "version": "3.9",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
+                "reference": "tags/3.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.3.9.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [

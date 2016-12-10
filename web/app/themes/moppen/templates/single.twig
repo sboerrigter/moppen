@@ -7,6 +7,10 @@
 
 	{{ post.content }}
 
+	{% if post.get_field('joke-author') %}
+	    <p class="joke-author">Ingestuurd door {{ post.get_field('joke-author') }}</p>
+	{% endif %}
+
 	{% include 'partials/rating.twig' %}
 
 	<p>
