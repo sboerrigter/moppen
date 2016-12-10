@@ -15,10 +15,15 @@ $context['newestJokes'] = Timber::get_posts($args, 'Sboerrigter\Moppen\TimberHel
 $args = array(
     'post_type'      => 'jokes',
     'posts_per_page' => 10,
+    'meta_query'     => array(
+        'relation'   => 'AND',
+        '_rating'    => array('key' => '_rating'),
+        '_upvotes'   => array('key'  => '_upvotes'),
+    ),
     'orderby'        => array(
         '_rating'    => 'DESC',
         '_upvotes'   => 'DESC',
-    )
+    ),
 );
 $context['bestJokes'] = Timber::get_posts($args, 'Sboerrigter\Moppen\TimberHelpers\Joke');
 

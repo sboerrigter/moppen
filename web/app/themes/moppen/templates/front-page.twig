@@ -7,25 +7,13 @@
 
   {{ post.content }}
 
-  {% if categories is not empty %}
-    <h2>Moppen categorieën</h2>
-
-    <div class="categories">
-        {% for category in categories %}
-            <a class="category" href="{{ category.link }}">
-                {{- category.name -}}
-            </a>
-        {% endfor %}
-
-        {% include 'partials/view-all-button.twig' %}
-    </div>
-  {% endif %}
+  {% include 'partials/categories.twig' %}
 
   {% if newestJokes is not empty %}
     <h2>Nieuwste moppen</h2>
 
     <div class="jokes-list">
-        {% for joke in newestJokes %}
+        {% for post in newestJokes %}
             {% include 'partials/loop-joke.twig' %}
         {% endfor %}
     </div>
@@ -34,10 +22,10 @@
   {% endif %}
 
   {% if bestJokes is not empty %}
-    <h2>Geinigste moppen</h2>
+    <h2>Beste moppen</h2>
 
     <div class="jokes-list">
-        {% for joke in bestJokes %}
+        {% for post in bestJokes %}
             {% include 'partials/loop-joke.twig' %}
         {% endfor %}
     </div>

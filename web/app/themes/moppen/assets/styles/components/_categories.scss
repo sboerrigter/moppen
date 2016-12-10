@@ -1,0 +1,19 @@
+.categories {
+  @include full-width();
+  color: $dark-grey;
+  line-height: map-get($line-height, 'small');
+  margin-bottom: 10px;
+  padding-right: 20px;
+
+  @include respond-to('medium') {
+    width: 50%;
+  }
+
+  @include respond-to('large') {
+    width: 33%;
+  }
+
+  &:hover {
+    color: $extra-dark-grey;
+  }
+}

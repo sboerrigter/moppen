@@ -1,0 +1,6 @@
+.categories-list {
+  @include box();
+  @include clear();
+  @include full-width();
+  @include responsive-margin-bottom();
+}

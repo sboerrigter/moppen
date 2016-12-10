@@ -1,0 +1,11 @@
+{% if categories is not empty %}
+  <div class="categories-list">
+      <h2>Moppen categorieën</h2>
+
+      {% for category in categories %}
+          <a class="categories" href="{{ category.link }}">
+              {{- category.name -}}
+          </a>
+      {% endfor %}
+  </div>
+{% endif %}
