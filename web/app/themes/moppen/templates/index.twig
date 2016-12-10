@@ -17,7 +17,9 @@
 		{% include 'partials/pagination.twig' %}
 	{% else %}
 		<p>
-			{{ __('No results found.', 'tp') }}
+			{{ __('No jokes found.', 'tp') }}
 		</p>
+
+		{% include 'partials/view-all-button.twig' %}
 	{% endif %}
 {% endblock %}

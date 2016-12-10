@@ -1,6 +1,7 @@
 .pager {
   @include full-width();
   @include responsive-margin-bottom();
+  margin-top: 20px;
   text-align: center;
 
   a,
