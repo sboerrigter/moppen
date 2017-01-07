@@ -3,6 +3,9 @@ web/.htaccess
 web/app/debug.log
 web/wp
 
+# Capistrano
+log/capistrano.log
+
 # Dotenv
 .env
 !.env.example
