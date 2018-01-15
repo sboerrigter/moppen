@@ -1,5 +1,5 @@
 # WP-CLI
-set :wpcli_local_url, 'http://moppen.local'
+set :wpcli_local_url, 'http://moppen.test'
 set :wpcli_remote_url, 'http://moppen.site'
 
 # Server settings
