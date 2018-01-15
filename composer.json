@@ -36,18 +36,19 @@
 			"url": "https://wpackagist.org"
 		},
 		{
-			"type": "composer",
-			"url": "https://languages.koodimonni.fi"
-		},
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    },
 		{
 			"type": "package",
 			"package": {
-				"name": "advanced-custom-fields/advanced-custom-fields-pro",
-				"version": "5.5.1",
+				"name": "wp-premium/advanced-custom-fields-pro",
 				"type": "wordpress-plugin",
-				"dist": {
-					"type": "zip",
-					"url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download&k=b3JkZXJfaWQ9NjI0MDV8dHlwZT1wZXJzb25hbHxkYXRlPTIwMTUtMDgtMjEgMTI6MzI6Mjg="
+				"version": "5.6.5",
+				"source": {
+					"type": "git",
+					"url": "https://github.com/wp-premium/advanced-custom-fields-pro.git",
+					"reference": "5.6.5"
 				}
 			}
 		},
@@ -56,11 +57,11 @@
             "package": {
                 "name": "wp-premium/gravityforms",
                 "type": "wordpress-plugin",
-                "version": "2.1.1",
+                "version": "2.2.5",
                 "source": {
                     "type": "git",
                     "url": "https://github.com/wp-premium/gravityforms.git",
-                    "reference": "2.0.3"
+                    "reference": "2.2.5"
                 }
             }
         }
@@ -85,8 +86,7 @@
 		"wpackagist-plugin/limit-login-attempts": "*",
 		"wpackagist-plugin/timber-library": "*",
 		"wpackagist-plugin/wordpress-seo": "*",
-		"wp-premium/gravityforms": "2.1.1"
-
+		"wp-premium/gravityforms": "*"
 	},
 	"extra": {
 		"dropin-paths": {
