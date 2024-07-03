@@ -7,7 +7,7 @@ set :log_level, :info
 set :linked_files, ['.env', 'auth.json', 'web/.htaccess']
 set :linked_dirs, ['web/app/uploads']
 
-set :wpcli_local_url, 'http://moppen.test'
+set :wpcli_local_url, 'http://www.moppen.test'
 
 after 'deploy:published', 'opcache:clear'
 after 'deploy:published', 'varnish:clear'
