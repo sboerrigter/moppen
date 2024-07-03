@@ -7,27 +7,6 @@
     }
   }
 
-  .whatsapp {
-    $whatsapp-color: #25d366;
-
-    background: $whatsapp-color;
-    display: none;
-    margin: -20px 0 20px;
-    text-align: center;
-    width: 100%;
-
-    svg {
-      height: 16px;
-      margin: 0 10px 0 0;
-      vertical-align: -3px;
-      width: 16px;
-    }
-
-    path {
-      fill: $white;
-    }
-  }
-
   .results .grade-votes {
     margin: 0 0 7px;
 
