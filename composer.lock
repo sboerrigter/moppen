@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78244100e4f28c1395e36d4b6b0c7caa",
+    "content-hash": "27b019c74de057d3421913766b6fccde",
     "packages": [
         {
             "name": "composer/installers",
@@ -1144,6 +1144,24 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/timber-library/"
+        },
+        {
+            "name": "wpackagist-plugin/varnish-http-purge",
+            "version": "5.2.1",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/varnish-http-purge/",
+                "reference": "tags/5.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/varnish-http-purge.5.2.1.zip"
+            },
+            "require": {
+                "composer/installers": "^1.0 || ^2.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/varnish-http-purge/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

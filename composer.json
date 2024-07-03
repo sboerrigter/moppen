@@ -89,7 +89,8 @@
     "wpackagist-plugin/limit-login-attempts": "*",
     "wpackagist-plugin/timber-library": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpengine/advanced-custom-fields-pro": "*"
+    "wpengine/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/varnish-http-purge": "^5.2"
   },
   "extra": {
     "dropin-paths": {
