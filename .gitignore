@@ -1,25 +1,18 @@
-# WordPress
+.DS_Store
+.env
+log/capistrano.log
+vendor
 web/.htaccess
 web/app/debug.log
-web/wp
-
-# Capistrano
-log/capistrano.log
-
-# Dotenv
-.env
-!.env.example
-
-# Composer
-vendor
-
-# App
-web/app/plugins/*
-!web/app/plugins/.gitkeep
-web/app/mu-plugins/*
-!web/app/mu-plugins/bedrock-autoloader.php
 web/app/languages/*
-!web/app/languages/.gitkeep
+web/app/mu-plugins/*
+web/app/plugins/*
 web/app/upgrade
 web/app/uploads/*
+web/wp
+
+!.env.example
+!web/app/languages/.gitkeep
+!web/app/mu-plugins/bedrock-autoloader.php
+!web/app/plugins/.gitkeep
 !web/app/uploads/.gitkeep
