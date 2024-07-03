@@ -1,104 +1,119 @@
 {
-	"name": "trendwerk/bedrock",
-	"type": "project",
-	"license": "MIT",
-	"description": "A modern WordPress stack",
-	"homepage": "https://github.com/trendwerk/bedrock",
-	"authors": [
-		{
-			"name": "Scott Walkinshaw",
-			"email": "scott.walkinshaw@gmail.com",
-			"homepage": "https://github.com/swalkinshaw"
-		},
-		{
-			"name": "Ben Word",
-			"email": "ben@benword.com",
-			"homepage": "https://github.com/retlehs"
-		},
-		{
-			"name": "Harold Angenent",
-			"email": "harold@trendwerk.nl",
-			"homepage": "https://github.com/haroldangenent"
-		}
-	],
-	"keywords": [
-		"wordpress", "stack", "capistrano", "composer", "wp"
-	],
-	"support": {
-		"issues": "https://github.com/trendwerk/bedrock/issues"
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"repositories": [
-		{
-			"type": "composer",
-			"url": "https://wpackagist.org"
-		},
-		{
+  "name": "trendwerk/bedrock",
+  "type": "project",
+  "license": "MIT",
+  "description": "A modern WordPress stack",
+  "homepage": "https://github.com/trendwerk/bedrock",
+  "authors": [
+    {
+      "name": "Scott Walkinshaw",
+      "email": "scott.walkinshaw@gmail.com",
+      "homepage": "https://github.com/swalkinshaw"
+    },
+    {
+      "name": "Ben Word",
+      "email": "ben@benword.com",
+      "homepage": "https://github.com/retlehs"
+    },
+    {
+      "name": "Harold Angenent",
+      "email": "harold@trendwerk.nl",
+      "homepage": "https://github.com/haroldangenent"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "stack",
+    "capistrano",
+    "composer",
+    "wp"
+  ],
+  "support": {
+    "issues": "https://github.com/trendwerk/bedrock/issues"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "koodimonni/composer-dropin-installer": true,
+      "composer/installers": true,
+      "ffraenz/private-composer-installer": true,
+      "gotoandplay/gravityforms-composer-installer": true,
+      "roots/wordpress-core-installer": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
       "type": "composer",
       "url": "https://wp-languages.github.io"
     },
-		{
-			"type": "package",
-			"package": {
-				"name": "wp-premium/advanced-custom-fields-pro",
-				"type": "wordpress-plugin",
-				"version": "5.6.5",
-				"source": {
-					"type": "git",
-					"url": "https://github.com/wp-premium/advanced-custom-fields-pro.git",
-					"reference": "5.6.5"
-				}
-			}
-		},
-		{
-            "type": "package",
-            "package": {
-                "name": "wp-premium/gravityforms",
-                "type": "wordpress-plugin",
-                "version": "2.2.5",
-                "source": {
-                    "type": "git",
-                    "url": "https://github.com/wp-premium/gravityforms.git",
-                    "reference": "2.2.5"
-                }
-            }
+    {
+      "type": "composer",
+      "url": "https://connect.advancedcustomfields.com"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "gravityforms/gravityforms",
+        "version": "2.8.13",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://www.gravityhelp.com/wp-content/plugins/gravitymanager/api.php?op=get_plugin&slug=gravityforms&key={%GRAVITY_FORMS_KEY}"
+        },
+        "require": {
+          "composer/installers": "^1.4",
+          "gotoandplay/gravityforms-composer-installer": "^2.3"
         }
-	],
-	"require-dev": {
-		"trendwerk/dev-mail": "1.0.1",
-		"trendwerk/dev-uploads": "1.0.3"
-	},
-	"require": {
-		"php": ">=5.5",
-    "composer/installers": "~1.0",
-    "oscarotero/env": "^1.0",
-    "vlucas/phpdotenv": "~2.0",
-		"johnpbloch/wordpress": "*",
-		"koodimonni-language/core-nl_nl": "*",
-		"advanced-custom-fields/advanced-custom-fields-pro": "*",
-		"trendwerk/acf-theme-config": "*",
-		"trendwerk/post-type-menu-highlight": "*",
-		"trendwerk/smtp": "*",
-		"wpackagist-plugin/akismet": "*",
-		"wpackagist-plugin/gravity-forms-custom-post-types": "*",
-		"wpackagist-plugin/limit-login-attempts": "*",
-		"wpackagist-plugin/timber-library": "*",
-		"wpackagist-plugin/wordpress-seo": "*",
-		"wp-premium/gravityforms": "*"
-	},
-	"extra": {
-		"dropin-paths": {
-			"web/app/languages/": ["vendor:koodimonni-language"],
-			"web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
-			"web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
-		},
-		"installer-paths": {
-			"web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
-			"web/app/plugins/{$name}/": ["type:wordpress-plugin"],
-			"web/app/themes/{$name}/": ["type:wordpress-theme"]
-		},
-		"wordpress-install-dir": "web/wp"
-	}
+      }
+    }
+  ],
+  "require": {
+    "composer/installers": "*",
+    "gravityforms/gravityforms": "*",
+		"roots/wordpress": "*",
+    "roots/wp-config": "*",
+		"roots/wp-password-bcrypt": "*",
+    "koodimonni-language/core-nl_nl": "*",
+    "oscarotero/env": "^2.1",
+    "php": ">=8.0",
+    "trendwerk/acf-theme-config": "*",
+    "trendwerk/post-type-menu-highlight": "*",
+    "trendwerk/smtp": "*",
+    "vlucas/phpdotenv": "^4.1",
+    "wpackagist-plugin/akismet": "*",
+    "wpackagist-plugin/gravity-forms-custom-post-types": "*",
+    "wpackagist-plugin/limit-login-attempts": "*",
+    "wpackagist-plugin/timber-library": "*",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpengine/advanced-custom-fields-pro": "*"
+  },
+  "extra": {
+    "dropin-paths": {
+      "web/app/languages/": [
+        "vendor:koodimonni-language"
+      ],
+      "web/app/languages/plugins/": [
+        "vendor:koodimonni-plugin-language"
+      ],
+      "web/app/languages/themes/": [
+        "vendor:koodimonni-theme-language"
+      ]
+    },
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": [
+        "type:wordpress-muplugin"
+      ],
+      "web/app/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "web/app/themes/{$name}/": [
+        "type:wordpress-theme"
+      ]
+    },
+    "wordpress-install-dir": "web/wp"
+  }
 }

@@ -11,6 +11,6 @@ set :deploy_to, -> { "/srv/users/serverpilot/apps/#{fetch(:application)}" }
 set :log_level, :info
 
 # Linked files and directories for /shared/
-set :linked_files, fetch(:linked_files, []).push('.env')
+set :linked_files, fetch(:linked_files, []).push('.env', 'auth.json')
 set :linked_files, fetch(:linked_files, []).push('web/.htaccess')
 set :linked_dirs, fetch(:linked_dirs, []).push('web/app/uploads')
